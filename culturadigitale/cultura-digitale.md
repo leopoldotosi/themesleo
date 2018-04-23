@@ -13,6 +13,7 @@ layout: layout1
 	<ul class="actions"> <li><a href="{{article.url}}" class="button">More</a></li> </ul>
     </article>
 </div>
+{% endfor %}
 
 
 
