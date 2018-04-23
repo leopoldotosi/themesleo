@@ -19,10 +19,10 @@ layout: layout1
 
 
 
-{% for post in site.categories.[category_name] %}
+{% for article in site.categories.[category_name] %}
 <div>
 
-  site.categories.[category_name]
+  {{ article.title }}
 #    {% if post_index0 == forloop.index %}{% assign next_post = post %}{% endif %}
 #    {% if post_index1 == forloop.index0 %}{% assign prev_post = post %}{% endif %}
 </div>
