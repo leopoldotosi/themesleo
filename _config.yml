@@ -19,7 +19,7 @@ feed:
 
 # Build settings
 markdown: kramdown
-#permalink: /
+permalink: /themesleo
 #theme: jekyll-theme-dinky
 plugins:
   - jekyll-admin
