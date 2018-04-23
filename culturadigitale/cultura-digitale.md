@@ -9,7 +9,7 @@ layout: layout1
 	</header>
 
 
-<div class="relative">
+<div class="leo1">
 	
 	<article>
 		<h3><a href="taylorismo-digitale.html">Taylorismo Digitale</a></h3>

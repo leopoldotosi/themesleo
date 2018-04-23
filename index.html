@@ -8,7 +8,7 @@ layout: layout1
 
 
 <p> <a href="leo.html">leo</a> </p>
-<p> <a href="culturadigitale/cultura-digitale.html">cultura digitale</a> </p>
+<p> <a href="culturadigitale/cultura-digitale1.html">cultura digitale</a> </p>
 
 
 <p>
@@ -29,13 +29,14 @@ layout: layout1
 </section>
 <section>
 <p>
-<div class="tiles">
+<div class="cults">
 
 	{% for page in site.pages %}
 	{% if page.title %}
 	    <div class="relative">
 		    {{ page.url }}
-		<a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		<!-- a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a -->
+		<a class="mdl-navigation__link" href="{{ site.baseurl }}/themesleo{{ page.url }}">{{ page.title }}</a>
 	    </div>
 	{% endif %}
 	{% endfor %}
