@@ -12,14 +12,16 @@ layout: layout1
 
 
 <p>
-<div class="relative">
+<div class="tiles">
 	{% for post in site.posts %}
+    <div class="relative">
 	<article>
 		<!-- a href="{{site.baseurl}}{{post.url}}" class="image"><img src="assets/images/{{post.image}}" alt="" /></a -->
-		<h3><a href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a></h3>
-		{{ post.excerpt}}
-		<ul class="actions"> <li><a href="{{site.baseurl}}/themesleo/{{post.url}}" class="button">More</a></li> </ul>
+		<h3>{{ post.title }}</h3>
+	
+		<ul class="actions"> <li><a href="{{site.baseurl}}/themesleo{{post.url}}" class="button">More</a></li> </ul>
 	</article>
+    </div>
 	
 	{% endfor %}
 </div>
