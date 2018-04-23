@@ -9,6 +9,7 @@ layout: layout1
 	</header>
 
 
+	<article>
 	<div class="posts">
 	
 		<article>
