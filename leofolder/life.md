@@ -1,3 +1,7 @@
+---
+layout: layout1
+---
+<section>
 <p>
 servers 
 	Application Server: bea-weblogic, Jboss EAP,  
@@ -23,4 +27,5 @@ File system
 
 
 </p>
+</section>
 
