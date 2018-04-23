@@ -8,8 +8,7 @@ layout: layout1
 	{% for page in site.pages %}
 	{% if page.title %}
 	    <div class="relative">
-		    {{ page.url }}
-		<a class="mdl-navigation__link" href="{{ themesleo/page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+		<a class="mdl-navigation__link" href="{{ site.baseurl }}/themesleo{{ page.url }}">{{ page.title }}</a>
 	    </div>
 	{% endif %}
 	{% endfor %}
