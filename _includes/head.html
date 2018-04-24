@@ -11,7 +11,33 @@
 		padding: 14px 16px;
 		text-decoration: none;
 		left: 20px;
+		background-color: #785EDD;
 		border: 3px solid #73AD21;
 	}
 	</style>
+
+	<script>
+
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+
+		document.body.style.background = bgColor;
+		//document.div.backgroundColor = bgColor;
+		}
+
+// random_bg_color();
+	</script>
+<!--
+	<script>
+	setInterval(function () { 
+	  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+	    }, 1000);
+	</script>
+	-->
+
 </head>
