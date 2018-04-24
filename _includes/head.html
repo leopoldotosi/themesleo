@@ -30,7 +30,25 @@
 		}
 
 // random_bg_color();
-	</script>
+</script>
+
+
+
+  	<script>
+function w3_open() {
+	  document.getElementById("main").style.marginLeft = "25%";
+	    document.getElementById("mySidebar").style.width = "25%";
+	      document.getElementById("mySidebar").style.display = "block";
+	        document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	    document.getElementById("mySidebar").style.display = "none";
+	      document.getElementById("openNav").style.display = "inline-block";
+}
+   </script>
+
+
 <!--
 	<script>
 	setInterval(function () { 
@@ -38,6 +56,7 @@
 	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
 	    }, 1000);
 	</script>
-	-->
+
+-->
 
 </head>
