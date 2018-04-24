@@ -17,6 +17,7 @@ feed:
   path: atom.xml
 
 
+#785EDD  backgroundcolor: 
 # Build settings
 markdown: kramdown
 #permalink: /themesleo

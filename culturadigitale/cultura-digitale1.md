@@ -13,8 +13,6 @@ layout: layout1
 	{% endif %}
 	{% endfor %}
 
-
-
 </div>
 </p>
 </section>
