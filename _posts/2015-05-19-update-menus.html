@@ -1,0 +1,16 @@
+---
+layout: post
+title: update-menus
+date: '2015-05-19T08:01:00.001-07:00'
+author: leopoldo
+tags:
+- virtualbox
+- menu
+- fluxbox
+- linux
+modified_time: '2015-05-22T05:37:44.530-07:00'
+blogger_id: tag:blogger.com,1999:blog-8346769986915011049.post-2331609259609820108
+blogger_orig_url: http://poldonet.blogspot.com/2015/05/update-menus.html
+---
+
+A little trick :D about menu<br /><br />I usually work with fluxbox, because is light and quick. Sometimes when I install new application there isn't on mouse menu.<br /><br />There is a nice future of systems called <b>update-menus</b> very easy by use:D<br /><br />From root create inside directory&nbsp; menu a new file with label of application.<br /><br />I create one for virtualbox with this parameters:<br /><br />#<b> more /usr/share/menu/VirtualBox </b><br /><br />?package(virtualbox):needs="X11" \<br />&nbsp; section="Applications/Emulators" \<br />&nbsp; title="virtualbox" \<br />&nbsp; command="/usr/bin/virtualbox" \<br />&nbsp; hints="Emulators"<br /><br />Where <i>package</i> is the application and <i>need</i> the enviroment where it works,<br /><i>section</i> the path of menu, <i>title</i> the label on menu, <i>command</i> the path of the application execute, <i>hints</i> the sub-menu where the label is.<br /><br />Run the command below<br /><br /><b># update-menus </b><br /><br />if everithing is ok the menu label run your application.<br /><br />With <i>dpkg -L menu</i> you can see the package on debian ;D<br /><br />

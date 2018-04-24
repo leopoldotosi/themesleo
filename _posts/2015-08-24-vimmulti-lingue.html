@@ -1,0 +1,17 @@
+---
+layout: post
+title: vim_multi-lingue
+date: '2015-08-24T03:29:00.000-07:00'
+author: leopoldo
+tags:
+- multi
+- bash
+- vim
+- shell
+modified_time: '2015-08-24T03:29:18.605-07:00'
+thumbnail: http://1.bp.blogspot.com/-NMu5AWoKfxo/VdroHsTZEwI/AAAAAAAAAjo/KbNFhX6vvPk/s72-c/vim_spell-03.jpg
+blogger_id: tag:blogger.com,1999:blog-8346769986915011049.post-8265085485927451635
+blogger_orig_url: http://poldonet.blogspot.com/2015/08/vimmulti-lingue.html
+---
+
+A chi piacciono gli editors testuali uno dei più potenti è vi(vim) <br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-NMu5AWoKfxo/VdroHsTZEwI/AAAAAAAAAjo/KbNFhX6vvPk/s1600/vim_spell-03.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="155" src="http://1.bp.blogspot.com/-NMu5AWoKfxo/VdroHsTZEwI/AAAAAAAAAjo/KbNFhX6vvPk/s320/vim_spell-03.jpg" width="320" /></a></div>qui vi propongo l'abilitazione del supporto multilingue :D<br /><br />Aprite la shell, digitate vim nomefile.txt e dalla cmd-line dell'editor digitate:<br /><br /><b>setlocal spell spelllang=es&nbsp;</b><br /><b><br /></b>per l'italiano it, inglese americano en_us come specificato nella variabile spelllang<br /><br /><br />Verrà indicato un avviso che l'idioma scelto non è presente:<br /><br /><span style="background-color: #f1c232;"><span style="color: #4c1130;">Cannot find spell .....</span></span><br /><br />con la richieste se volete aggiungerlo:<br /><span style="color: #274e13;"><br /></span><span style="background-color: #f1c232;"><span style="color: #4c1130;">Do you want me ...?</span></span><br /><br />premete y e vi installerà l'idioma scelto. :D<br /><br /><br />installate sotto la home directory come default dovreste trovare i seguenti files se aggiungete anche i suggestions files :P<br /><br />&nbsp;ls ~./.vim/spell/<br />es.utf-8.add<br />es.utf-8.add.spl<br />es.utf-8.spl<br />es.utf-8.sug<br /><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-TlNzC4ELIeU/VdrvHjbGZ6I/AAAAAAAAAj4/YF75VFK0QhE/s1600/vim_spell08.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="105" src="http://2.bp.blogspot.com/-TlNzC4ELIeU/VdrvHjbGZ6I/AAAAAAAAAj4/YF75VFK0QhE/s320/vim_spell08.jpg" width="320" /></a></div>Come potete vedere qui di fianco le parole non riconosciute sono marcate in rosso, mentre errori maiuscolo minuscolo in blue. Potete aggiungere le parole al dizionario locale posizionando il cursore sulla parola scelta, qui coproliti, e digitare zg. La parola verrà immediatamente riconosciuta.<br /><br /><br />Per rendere permanente questo utility create nella home directory il file .vimrc e inserite il cmd&nbsp; <b>setlocal spell spelllang=es,it,... </b>con tutti gli idiomi che volete che siano riconosciuti, questo sistema ha molte altre utilità. ;D<br /><br /><br />Se quando aprite un file ricevete il seguente avviso:<br /><br />&nbsp;vim coproliti.txt <br />Error detected while processing /home/leopoldo/.vim/spell/it.utf-8.spl:<br />E763: Word characters differ between spell files<br />Error detected while processing /home/leopoldo/.vim/spell/es.utf-8.spl:<br />E763: Word characters differ between spell files<br />Press ENTER or type command to continue<br /><br />VI vi avvisa che vi sono parole non riconosciute, tipo nomi propri, ecc.. se volete potete aggiungerli ;D
