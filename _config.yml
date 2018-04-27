@@ -13,9 +13,13 @@ street_address: "via bari 8"
 city: Milano
 state: IT
 locale: it
-feed:
-  path: atom.xml
-
+#feed:
+#  path: atom.xml
+defaults:
+  - scope:
+      path: "assets/resources"
+    values:
+      image: true
 
 #785EDD  backgroundcolor: 
 # Build settings
@@ -24,9 +28,9 @@ markdown: kramdown
 #theme: jekyll-theme-dinky
 plugins:
   - jekyll-admin
-  - jekyll-feed
+# - jekyll-feed
 # - jekyll-seo-tag
-# - jekyll-sitemap
+  - jekyll-sitemap
 # - jekyll-lunr-js-search 
 # - github-pages
 #lunr_search:

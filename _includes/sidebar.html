@@ -1,35 +1,61 @@
 
 <!-- test sidebar -->
-<aside id="rel3">
+<nav id="rel3">
 <!-- Sidebar -->
 <p>
 <div class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left" style="display:none" id="mySidebar">
-    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button">Link 3</a>
-</div>
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+          <ul>
+            <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+            <li>
+              <span class="opener">leopoldo</span>
+              <ul>
+	        <li> {% include present.html %} </li>
+		<li><a href="{{ site.baseurl }}/assets/resources/myprofile.html">more</a></li>
+              </ul>
+            </li>
+            <li><a href="{{ site.baseurl }}/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
+            <li><a href="https://librescuola.org/">Libre Scuola</a></li>
+            <li><a href="https://#">OpenLabs</a></li>
+          </ul>
+    <div  class="w3-bar-item">
 
-    <div class="w3-teal">
-        <button id="openNav" class="w3-button w3-teal w3-xlarge w3-container" onclick="w3_open()">&#9776;</button>
-       
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <b>Scrivi a PoldoNet</b>
+          </header>
+	  <p>Hai dubbi, perplessità, ti serve aiuto o <br /> hai idee da proporre? Mandaci una mail!</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="mailto:leopoldotosi@tiscali.it">{{ site.email }}</a></li>
+            <!--TODO<li class="fa-phone">{{site.phone}}</li>-->
+            <!--TODO<li class="fa-home">{{ site.street_address }}<br/>
+            {{ site.city }}, {{ site.state }} {{ site.zip_code }}<br/>
+            {{ site.country }}</li>-->
+          </ul>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>poldonet</br>associazione di promozione sociale</br>
+          CF: {{ site.CF }}</br>IVA: {{ site.PIVA }}</p>
+
+          <p class="copyright">&copy; {{ site.title }}
+	  I documenti PoldoNet sono rilasciati sotto licenza <br /> <a href="https://creativecommons.org/licenses/by/3.0/it/deed.en_US">Creative Commons Attribution 3.0 Italy License</a>.
+          </p>
+
+        </footer>
+
     </div>
-</p>
 
-<!-- Page Content 
-	<p>
-<div id="mains">
-
-	<div class="w3-teal">
-		<button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-		<div class="w3-container"> <b>Leo My Page</b> </div>
-	</div>
 </div>
+
+    <div class="w3-teal w3-bar">
+        <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position: fixed; right: 50%; top: 1%;"> <h3>{{ site.title }}</h3> </div>
+	     {% include search-lunr1.html %} 
+    </div>
+
+
 </p>
- -->
-
-
-</aside>
+</nav>

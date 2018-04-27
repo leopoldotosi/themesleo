@@ -2,19 +2,69 @@
   <title>poldonet</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" / -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/w3.css" />
   <style>
 	div.relative {
 		float: left;
-		max-width:300px;
+		max-width:500px;
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
 		left: 20px;
 		background-color: #785EDD;
 		border: 3px solid #73AD21;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		
 	}
+
+		div.borderleo {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1%;
+		text-align: left;
+		padding: 14px 16px;
+		text-decoration: none;
+
+
+		border: 3px solid #73AD21;
+		
+	}
+	div.cpre {
+			margin-right: 2%;{content: "\200B";};
+    }
+
+    div.controls-wrapper{}
 	</style>
+
+	<script>
+
+function changecolor() {
+    var colors = ["#B40404", "#0000FF", "#FE2E9A", "#FF0080", "#2EFE2E", ];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#controls-wrapper').css("background-color", colors[rand]);
+    setTimeout('changecolor()', 1000);
+}
+	</script>
+<script>
+    function random_post_bg_color() {
+        var x = Math.floor(Math.random() * 200);
+        var y = Math.floor(Math.random() * 200);
+        var z = Math.floor(Math.random() * 200);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(bgColor);
+
+
+        document.getElementById("post_color").style.backgroundColor = bgColor;
+        document.getElementById("post_color").style.display = 'block';
+
+
+        }       
+
+</script>
 
 	<script>
 
@@ -28,9 +78,8 @@
 		document.body.style.background = bgColor;
 		//document.div.backgroundColor = bgColor;
 		}
-
-// random_bg_color();
 </script>
+
 
 
 
