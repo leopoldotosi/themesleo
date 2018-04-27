@@ -8,7 +8,7 @@ layout: layout1
 	{% for post in site.posts %}
     <div class="relative">
 	<article>
-		<b>{{ post.title }}</b>
+		<b>{{ site.post.title }}</b>
 		<!-- b> {{ post.excerpt | truncatewords:15 }}  </b -->
 		<ul class="actions"> <li><a href="{{site.baseurl}}/themesleo{{post.url}}" class="button">More</a></li> </ul>
 	</article>

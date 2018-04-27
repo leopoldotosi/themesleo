@@ -8,10 +8,9 @@
           <ul>
             <li><a href="{{site.baseurl}}/themesleo/index.html">Home</a></li>
             <li>
-              <span class="opener">leopoldo</span>
+              <!-- span class="opener">leopoldo</span -->
               <ul>
-	        <li> {% include present.html %} </li>
-		<li><a href="{{site.baseurl}}/themesleo/assets/resources/myprofile.html">more</a></li>
+		<li><a href="{{site.baseurl}}/themesleo/assets/resources/myprofile.html">{% include present.html %}</a></li>
               </ul>
             </li>
             <li><a href="{{site.baseurl}}/themesleo/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
@@ -52,7 +51,7 @@
 
     <div class="w3-teal w3-bar">
         <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-	<div class="w3-bar-item w3-deep-purple" align="center" style="position: fixed; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3>{{ site.title }}</h3> </div>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position:  absolute; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3>{{ site.title }}</h3> </div>
 	     {% include search-lunr1.html %} 
     </div>
 
