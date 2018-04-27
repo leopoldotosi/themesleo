@@ -14,9 +14,22 @@ layout: layout1
 	</article>
 
     </div>
- 			 
-	
 	{% endfor %}
+	
+    <div class="relative">
+		<ul class="actions"> 
+	{% for p in site.pages %}
+	<!-- -->
+			<li>{{site.baseurl}}/themesleo{{p.url}}</li> 
+			<li>{{site.baseurl}}/themesleo{{p.path}}</li> 
+			<li>{{site.baseurl}}/themesleo{{p.relative_path}}</li> 
+	
+
+	{% endfor %}
+	
+		</ul>
+    </div>
+	
 </div>
 </p>
 </section>
