@@ -9,6 +9,8 @@ sintassi testo
 enginiering con js, ruby, css
 [jekyll-plugins](https://jekyllrb.com/docs/plugins/#installing-a-plugin)
 
+[w3c](https://www.w3.org/) 
+
 gestione e creazione post
 [jekyll-admin](https://github.com/jekyll/jekyll-admin)
 
