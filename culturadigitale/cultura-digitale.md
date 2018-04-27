@@ -1,5 +1,6 @@
 ---
 layout: layout1
+root: ../
 ---
 <section>
 <p>
@@ -8,7 +9,7 @@ layout: layout1
 	{% for page in site.pages %}
 	{% if page.title %}
 	    <div class="relative">
-		<a class="mdl-navigation__link" href="{{ site.baseurl }}/themesleo{{ page.url }}">{{ page.title }}</a>
+		<a class="mdl-navigation__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
 	    </div>
 	{% endif %}
 	{% endfor %}
