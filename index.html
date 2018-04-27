@@ -21,9 +21,9 @@ root: ../
 		<ul class="actions"> 
 	{% for p in site.pages %}
 	<!-- -->
-			<li>{{site.baseurl}}/themesleo{{p.url}}</li> 
-			<li>{{site.baseurl}}/themesleo{{p.path}}</li> 
-			<li>{{site.baseurl}}/themesleo{{p.relative_path}}</li> 
+			<li>{{site.baseurl}}{{p.url}}</li> 
+			<li>{{site.baseurl}}{{p.path}}</li> 
+			<li>{{site.baseurl}}{{p.relative_path}}</li> 
 	
 
 	{% endfor %}
