@@ -9,4 +9,4 @@ _asset_bundler_cache
 .jekyll-metadata
 Gemfile.lock
 #Gemfile
-#_config.yml
+_config.yml
