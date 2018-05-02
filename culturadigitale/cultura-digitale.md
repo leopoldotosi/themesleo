@@ -4,6 +4,7 @@ root: ../
 ---
 <section>
 <p>
+<div> <ul> <li><a href="../search-dyn.html">search</a></li> </ul> </div>
 <div class="cults">
 
 	{% for page in site.pages %}
