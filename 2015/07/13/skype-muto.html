@@ -1,0 +1,258 @@
+<html>
+
+     <head>
+  <title>poldonet</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- link rel="stylesheet" href="/themesleo/assets/css/main.css" / -->
+  <link rel="stylesheet" href="/assets/css/w3.css" />
+  <script src="/assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/lunr.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/skel.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/util.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+	div.relative {
+		float: left;
+		max-width:500px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		left: 20px;
+		background-color: #785EDD;
+		border: 3px solid #73AD21;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		
+	}
+
+		div.borderleo {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1%;
+		text-align: left;
+		padding: 14px 16px;
+		text-decoration: none;
+
+
+		border: 3px solid #73AD21;
+		
+	}
+	div.cpre {
+			margin-right: 2%;{content: "\200B";};
+    }
+
+    div.controls-wrapper{}
+	</style>
+
+	<script>
+
+function changecolor() {
+    var colors = ["#B40404", "#0000FF", "#FE2E9A", "#FF0080", "#2EFE2E", ];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#controls-wrapper').css("background-color", colors[rand]);
+    setTimeout('changecolor()', 1000);
+}
+	</script>
+<script>
+    function random_post_bg_color() {
+        var x = Math.floor(Math.random() * 200);
+        var y = Math.floor(Math.random() * 200);
+        var z = Math.floor(Math.random() * 200);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(bgColor);
+
+        document.getElementById("post_color").style.backgroundColor = bgColor;
+        document.getElementById("post_color").style.display = 'block';
+        }       
+
+</script>
+
+	<script>
+        function hideElemetId(){
+		document.getElementById("nameid").style.display = 'none';
+	}
+</script>
+
+	<script>
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+
+		document.body.style.background = bgColor;
+		//document.div.backgroundColor = bgColor;
+		}
+</script>
+
+
+
+
+  	<script>
+function w3_open() {
+	  document.getElementById("main").style.marginLeft = "25%";
+	    document.getElementById("mySidebar").style.width = "25%";
+	      document.getElementById("mySidebar").style.display = "block";
+	        document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	    document.getElementById("mySidebar").style.display = "none";
+	      document.getElementById("openNav").style.display = "inline-block";
+}
+   </script>
+
+
+<!--
+	<script>
+	setInterval(function () { 
+	  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+	    }, 1000);
+	</script>
+
+-->
+
+</head>
+ 
+
+
+<body onload="random_bg_color()">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+ 
+<!-- test sidebar -->
+<nav id="rel3">
+<!-- Sidebar -->
+<p>
+<div class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+	    <li><a href="/assets/resources/myprofile.html"><section id="mycv1d">
+<p>
+<pre>
+leopoldo 'poldo' tosi
+</pre></p>
+</section>
+</a></li>
+            <li><a href="/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
+            <li><a href="https://librescuola.org/">Libre Scuola</a></li>
+            <li><a href="https://#">OpenLabs</a></li>
+          </ul>
+    <div  class="w3-bar-item">
+
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <b>Scrivi a PoldoNet</b>
+          </header>
+	  <p>Hai dubbi, perplessità, ti serve aiuto o <br /> hai idee da proporre? Mandaci una mail!</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="mailto:leopoldotosi@tiscali.it"></a></li>
+            <!--TODO<li class="fa-phone"></li>-->
+            <!--TODO<li class="fa-home"><br/>
+            ,  <br/>
+            </li>-->
+          </ul>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>poldonet</br>associazione di promozione sociale</br>
+          CF: </br>IVA: </p>
+
+          <p class="copyright">&copy; 
+	  I documenti PoldoNet sono rilasciati sotto licenza <br /> <a href="https://creativecommons.org/licenses/by/3.0/it/deed.en_US">Creative Commons Attribution 3.0 Italy License</a>.
+          </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <div class="w3-teal w3-bar">
+        <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position: absolute; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3></h3> </div>
+	     
+<form action="/search" method="get" > 
+	<input type="text" id="search-query" name="q" class="w3-bar-item w3-display-right" style="top: 5%;text-align: left; width: 20%;" placeholder="not google, just lunr.js search" autocomplete="off"> 
+</form>
+
+
+<section id="search-results" style="display: none;"> 
+
+	
+	<script id="search-results-template" type="text/mustache">
+		{{#entries}}
+		<article>
+			<h3>
+				{{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+				<a href="{{url}}">{{title}}</a>
+			</h3>
+			{{#is_post}}
+			<ul>
+				{{#tags}}<li>{{.}} </li>{{/tags}}
+			</ul>
+			{{/is_post}}
+		</article>
+		{{/entries}}
+	</script>
+	
+
+
+
+	<script type="text/javascript">
+		$(function() {
+			$('#search-query').lunrSearch({
+				indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+				results   : '#search-results',          // selector for containing search results element
+				template  : '#search-results-template', // selector for Mustache.js template
+				titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+				emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+			});
+		});
+	</script>
+</section>
+
+
+ 
+    </div>
+
+
+</p>
+</nav>
+
+
+        <!-- Main -->
+        <div id="main">
+ 
+
+            <div class="borderleo" id="post_color" onclick="random_post_bg_color()">
+
+                <a href="http://www.aspesi-associazione.it/public/files/2015/CensimentoPopolazione_abitazioni_istat2011_Maggio2015-rev1.pdf" target="_blank"><b>l'ance coi dati</b> </a> del <a href="http://dati-censimentopopolazione.istat.it/" target="_blank"><b>censimento del 2011</b></a> ha eseguito la seguente analisi su allogi e edifici rileva che in Italia ci sono oltre 31 milioni di alloggi che oltre il 53% hanno più di 40'anni, che oltre 50 mila famiglie vivono in scantinati (ricordiamo che anche una famiglia è annegata in uno scantinato durante un acquazzone) che il 15% del territorio nazionale è costruito, che la piramide demografica da 0 a 35 anni è estremamente pari con un lieve declivio.<br /><br />Dai dati si evidenzia che il problema edilizio e di ordine urbanistico, credo che il Bisanio a Genova sia uno dei maggiori esempi e con l'expo si è persa una opportunità &nbsp;di riorganizzare Milano. L'edilizia oltre al fenomeno immobiliare va pensata come fenomeno economico alla luce dei nuovi sistemi costruttivi, edilizia leggera come trionfalmente è emersa all'expo. L'edilizia sarà riconvertibile, rimovibile, il più ecologica possibile, mini-modulare, a scadenza abitativa questo dovrebbe ridurre i costi, oppure trasformare radicalmente il concetto di proprietà di locazione che potrebbe essere deferito alla persona(ormai le persone vivono di più della vita media delle case).<br /><br />Aldo non concordo con la tua posizione di abolire la tassa sulla casa, può essere rivista e articolata meglio con tutte le voci di spesa possibili (l'attuale non è così malvagia), può essere impostata come detrazione, ma non certo abolita altrimenti l'appartenenza del territorio allo Stato dove va a finire (poi pretendiamo pure lamentarci del evasione). Il problema dell'edilizia non è immobiliare e costruttivo, ma urbanistico. Si è costruito male pensando solo ad abitare per sempre/in eterno, come se tutti dovessimo vivere in edifici in stile coloseo previa manutenzione. Se i collaboratori di Renzi hanno individuato 50 miliardi di €, credo che il fine dovrebbe essere diverso da far saltare per i prossimi 3 anni i bilanci comunali, che poi quello che succede quando si tocca quella imposta. )-: &nbsp; &nbsp; <br /><br /><br />se laudio non funziona su skype avviare&nbsp; <br /><br /><br /><span style="background-color: #1a1313; color: #550055; display: inline; float: none; font-family: &quot;arial&quot; , sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">nel file ~/.pulse/client.conf&nbsp; inserisci</span><br /><br style="background-color: #1a1313; color: #fdaafd; font-family: &quot;arial&quot;, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;" /><b><span style="background-color: #1a1313; color: #550055; display: inline; float: none; font-family: &quot;arial&quot; , sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">autospawn = yes</span></b><br /><br style="background-color: #1a1313; color: #fdaafd; font-family: &quot;arial&quot;, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;" /><br style="background-color: #1a1313; color: #fdaafd; font-family: &quot;arial&quot;, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;" /><span style="background-color: #1a1313; color: #550055; display: inline; float: none; font-family: &quot;arial&quot; , sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">avvia il demone</span><br /><br style="background-color: #1a1313; color: #fdaafd; font-family: &quot;arial&quot;, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;" /><b><span style="background-color: #1a1313; color: #550055; display: inline; float: none; font-family: &quot;arial&quot; , sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">pulseaudio -D</span></b><br /><br style="background-color: #1a1313; color: #fdaafd; font-family: &quot;arial&quot;, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;" /><span style="background-color: #1a1313; color: #550055; display: inline; float: none; font-family: &quot;arial&quot; , sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px;">installa <b>pavucontrol </b>e configuralo seguendo le immagini allegate</span><br /><br />poi <br /><br /><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-75SQoXiCGbA/V8mFDqIhecI/AAAAAAAAAtg/vcWXlUiQrKoXeVgePAb_Myp8rg-LbLvAQCLcB/s1600/pavu1.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="133" src="https://3.bp.blogspot.com/-75SQoXiCGbA/V8mFDqIhecI/AAAAAAAAAtg/vcWXlUiQrKoXeVgePAb_Myp8rg-LbLvAQCLcB/s200/pavu1.jpg" width="200" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://4.bp.blogspot.com/-lS1xClj1UBY/V8mFD8OF3kI/AAAAAAAAAtk/NAOGOUHTIrok_EJs516QlU8lUr-zSnERgCLcB/s1600/pavu2.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="133" src="https://4.bp.blogspot.com/-lS1xClj1UBY/V8mFD8OF3kI/AAAAAAAAAtk/NAOGOUHTIrok_EJs516QlU8lUr-zSnERgCLcB/s200/pavu2.jpg" width="200" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://3.bp.blogspot.com/-3A5yzOGuLak/V8mFEKVPesI/AAAAAAAAAto/4_hRbIzqR1ssItkudujvmILPu-Z4bm0twCLcB/s1600/pavu3.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="172" src="https://3.bp.blogspot.com/-3A5yzOGuLak/V8mFEKVPesI/AAAAAAAAAto/4_hRbIzqR1ssItkudujvmILPu-Z4bm0twCLcB/s200/pavu3.jpg" width="200" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://2.bp.blogspot.com/-jXr20Gy0kuo/V8mFEu9UF3I/AAAAAAAAAtw/xTzR4tZpyUAoDv9ER0qe7GgLpyOPnz7PgCLcB/s1600/pavu4.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="98" src="https://2.bp.blogspot.com/-jXr20Gy0kuo/V8mFEu9UF3I/AAAAAAAAAtw/xTzR4tZpyUAoDv9ER0qe7GgLpyOPnz7PgCLcB/s200/pavu4.jpg" width="200" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-TBJ6gvCPaMY/V8mFEcK3WDI/AAAAAAAAAts/m59ax3zImFUnQtfxf-TGu2Y_2u3zESEIwCLcB/s1600/pavu5.jpg" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="98" src="https://1.bp.blogspot.com/-TBJ6gvCPaMY/V8mFEcK3WDI/AAAAAAAAAts/m59ax3zImFUnQtfxf-TGu2Y_2u3zESEIwCLcB/s200/pavu5.jpg" width="200" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"><a href="https://1.bp.blogspot.com/-UI3v_rabUPw/V8mFFcygLHI/AAAAAAAAAt0/asqLgchUGMYf6dpZP_OZsygdBUaxMcR4QCLcB/s1600/pavu6.jpg" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="114" src="https://1.bp.blogspot.com/-UI3v_rabUPw/V8mFFcygLHI/AAAAAAAAAt0/asqLgchUGMYf6dpZP_OZsygdBUaxMcR4QCLcB/s200/pavu6.jpg" width="200" /></a></div><br /><b># ./skype</b><br /><br />
+
+            </div>
+        </div>
+
+
+    </div>
+
+  
+
+
+
+</body>
+
+</html>

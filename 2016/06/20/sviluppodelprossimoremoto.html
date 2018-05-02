@@ -1,0 +1,258 @@
+<html>
+
+     <head>
+  <title>poldonet</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- link rel="stylesheet" href="/themesleo/assets/css/main.css" / -->
+  <link rel="stylesheet" href="/assets/css/w3.css" />
+  <script src="/assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/lunr.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/skel.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/util.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+	div.relative {
+		float: left;
+		max-width:500px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		left: 20px;
+		background-color: #785EDD;
+		border: 3px solid #73AD21;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		
+	}
+
+		div.borderleo {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1%;
+		text-align: left;
+		padding: 14px 16px;
+		text-decoration: none;
+
+
+		border: 3px solid #73AD21;
+		
+	}
+	div.cpre {
+			margin-right: 2%;{content: "\200B";};
+    }
+
+    div.controls-wrapper{}
+	</style>
+
+	<script>
+
+function changecolor() {
+    var colors = ["#B40404", "#0000FF", "#FE2E9A", "#FF0080", "#2EFE2E", ];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#controls-wrapper').css("background-color", colors[rand]);
+    setTimeout('changecolor()', 1000);
+}
+	</script>
+<script>
+    function random_post_bg_color() {
+        var x = Math.floor(Math.random() * 200);
+        var y = Math.floor(Math.random() * 200);
+        var z = Math.floor(Math.random() * 200);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(bgColor);
+
+        document.getElementById("post_color").style.backgroundColor = bgColor;
+        document.getElementById("post_color").style.display = 'block';
+        }       
+
+</script>
+
+	<script>
+        function hideElemetId(){
+		document.getElementById("nameid").style.display = 'none';
+	}
+</script>
+
+	<script>
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+
+		document.body.style.background = bgColor;
+		//document.div.backgroundColor = bgColor;
+		}
+</script>
+
+
+
+
+  	<script>
+function w3_open() {
+	  document.getElementById("main").style.marginLeft = "25%";
+	    document.getElementById("mySidebar").style.width = "25%";
+	      document.getElementById("mySidebar").style.display = "block";
+	        document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	    document.getElementById("mySidebar").style.display = "none";
+	      document.getElementById("openNav").style.display = "inline-block";
+}
+   </script>
+
+
+<!--
+	<script>
+	setInterval(function () { 
+	  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+	    }, 1000);
+	</script>
+
+-->
+
+</head>
+ 
+
+
+<body onload="random_bg_color()">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+ 
+<!-- test sidebar -->
+<nav id="rel3">
+<!-- Sidebar -->
+<p>
+<div class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+	    <li><a href="/assets/resources/myprofile.html"><section id="mycv1d">
+<p>
+<pre>
+leopoldo 'poldo' tosi
+</pre></p>
+</section>
+</a></li>
+            <li><a href="/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
+            <li><a href="https://librescuola.org/">Libre Scuola</a></li>
+            <li><a href="https://#">OpenLabs</a></li>
+          </ul>
+    <div  class="w3-bar-item">
+
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <b>Scrivi a PoldoNet</b>
+          </header>
+	  <p>Hai dubbi, perplessità, ti serve aiuto o <br /> hai idee da proporre? Mandaci una mail!</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="mailto:leopoldotosi@tiscali.it"></a></li>
+            <!--TODO<li class="fa-phone"></li>-->
+            <!--TODO<li class="fa-home"><br/>
+            ,  <br/>
+            </li>-->
+          </ul>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>poldonet</br>associazione di promozione sociale</br>
+          CF: </br>IVA: </p>
+
+          <p class="copyright">&copy; 
+	  I documenti PoldoNet sono rilasciati sotto licenza <br /> <a href="https://creativecommons.org/licenses/by/3.0/it/deed.en_US">Creative Commons Attribution 3.0 Italy License</a>.
+          </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <div class="w3-teal w3-bar">
+        <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position: absolute; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3></h3> </div>
+	     
+<form action="/search" method="get" > 
+	<input type="text" id="search-query" name="q" class="w3-bar-item w3-display-right" style="top: 5%;text-align: left; width: 20%;" placeholder="not google, just lunr.js search" autocomplete="off"> 
+</form>
+
+
+<section id="search-results" style="display: none;"> 
+
+	
+	<script id="search-results-template" type="text/mustache">
+		{{#entries}}
+		<article>
+			<h3>
+				{{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+				<a href="{{url}}">{{title}}</a>
+			</h3>
+			{{#is_post}}
+			<ul>
+				{{#tags}}<li>{{.}} </li>{{/tags}}
+			</ul>
+			{{/is_post}}
+		</article>
+		{{/entries}}
+	</script>
+	
+
+
+
+	<script type="text/javascript">
+		$(function() {
+			$('#search-query').lunrSearch({
+				indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+				results   : '#search-results',          // selector for containing search results element
+				template  : '#search-results-template', // selector for Mustache.js template
+				titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+				emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+			});
+		});
+	</script>
+</section>
+
+
+ 
+    </div>
+
+
+</p>
+</nav>
+
+
+        <!-- Main -->
+        <div id="main">
+ 
+
+            <div class="borderleo" id="post_color" onclick="random_post_bg_color()">
+
+                <span class="short_text" id="result_box" lang="en">Development <span class="">of the next</span> <span class="">remote</span></span><br /><br /><span class="short_text" id="result_box" lang="en"><span class="">oggi vi presento qualcosa di semplice per gli sviluppatori, per gli altri potrebbe essere una esperienza meno lieta ((-:</span></span><br /><b><br /></b><b><span class="short_text" id="result_box" lang="en"><span class="">requisiti sw:</span></span></b><br /><b><br /></b><b><span class="short_text" id="result_box" lang="en"><span class="">virtualbox</span></span></b><br /><b><span class="short_text" id="result_box" lang="en"><span class="">jboss</span></span></b><br /><b><span class="short_text" id="result_box" lang="en"><span class="">jdk</span></span></b><br /><span class="short_text" id="result_box" lang="en"><span class=""><b>eclipse&nbsp;</b> </span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class="">In questo post viene affrontato come agganciare il codice sorgente al application server remoto [JBoss]. Tutte le configurazione ulteriori a supporto del esempio sono abbondantemente descritte in rete, anche questo argomento che vi presento come composizione didattica.</span></span><br /><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody><tr><td style="text-align: center;"><a href="https://4.bp.blogspot.com/-cPWeK0Y5L-0/V2fjB_h0krI/AAAAAAAAAtA/W9qwMIqYC-YVCUasV-pMZ6FxjKzT8XOsQCLcB/s1600/ecliDWP-03_a.jpg" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="224" src="https://4.bp.blogspot.com/-cPWeK0Y5L-0/V2fjB_h0krI/AAAAAAAAAtA/W9qwMIqYC-YVCUasV-pMZ6FxjKzT8XOsQCLcB/s320/ecliDWP-03_a.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">risultato finale</td></tr></tbody></table><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><b><span class="short_text" id="result_box" lang="en"><span class="">VirtualBox JBoss</span></span></b><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class="">Avviate una macchina virtuale con due schede di rete una in nat, l'altra host-only e installate JDK e Jboss senza nessuna configurazione particolare.</span></span><br /><span class="short_text" id="result_box" lang="en"><span class="">Aprite il file standealone.xml e assegenate alle interfacce di rete l'ip della scheda host-only.</span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class="">Avviate JBoss bin/standalone.sh si metterà in ascolto sulle porte 9990 web-management e 9999 console e 8080 applicative deploy. Spegnete jboss</span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class=""><b>Eclipse</b>&nbsp;</span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class="">Su un'altra macchina virtuale o sulla Guest insatllate JDK e Eclipse. Avviate eclipse, </span></span><span class="short_text" id="result_box" lang="en"><span class="">create un <b><a href="http://www.html.it/articoli/usare-eclipse-per-applicazioni-web-3/" target="_blank">dynamic web project</a></b> aggingete</span></span><br /><span class="short_text" id="result_box" lang="en"><span class="">&nbsp;una paggina html (numeri in blu 1). Poi configurate un <b><a href="http://tools.jboss.org/documentation/howto/configure_remote_server.html" target="_blank">server remoto jboss</a></b> come indicato nel link. Nel punto blu 2</span></span><span class="short_text" id="result_box" lang="en"><span class=""> tasto destro open, vi apre una interfaccia di configurazione del server. </span></span><span class="short_text" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class="">Nel punto blu 3 ip del application server. </span></span></span></span><span class="short_text" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class="">Nel punto blu 4 il file di configurazione. </span></span></span></span></span></span><span class="short_text" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class=""><span class="short_text" id="result_box" lang="en"><span class="">Nel punto blu 5 selezione/avvio/debug/stop</span></span></span></span></span></span> dei server configurati. Sotto il thread del application server. Associate l'host e avviate JBoss.(nei link trovate leinformazioni di riferimento)</span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""></span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""></span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""></span></span><br /><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: left; margin-right: 1em; text-align: left;"><tbody><tr><td style="text-align: center;"><a href="https://3.bp.blogspot.com/-fIoj2mT0i-Y/V2fi-cLEFGI/AAAAAAAAAsw/voZks_DCZMUU50qPSpD4nJhwdlqPnCt5gCKgB/s1600/ecliDWP-01_a.jpg" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="224" src="https://3.bp.blogspot.com/-fIoj2mT0i-Y/V2fi-cLEFGI/AAAAAAAAAsw/voZks_DCZMUU50qPSpD4nJhwdlqPnCt5gCKgB/s320/ecliDWP-01_a.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">elementi di configurazione</td></tr></tbody></table><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class="">Infine tasto destro sulla cartella del progetto, run as -&gt; run on server. Se tutto funziona da un browser digitando l'ip [se usate un dns locale il nome del sito] con cui è configurato jboss sulla porta 8080 nome progetto visualizza la pagina index.html.</span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class=""></span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""></span></span><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><b><span class="short_text" id="result_box" lang="en"><span class="">Conclusione</span></span></b><br /><span class="short_text" id="result_box" lang="en"><span class=""><br /></span></span><span class="short_text" id="result_box" lang="en"><span class="">Questo è il sistema per testare il codice sorgente sulla configurazione del server remoto.</span></span><br /><table cellpadding="0" cellspacing="0" class="tr-caption-container" style="float: right; margin-left: 1em; text-align: right;"><tbody><tr><td style="text-align: center;"><a href="https://2.bp.blogspot.com/-JTTcrr6NS68/V2fjB4BmU0I/AAAAAAAAAs4/eM9rWCuJhjwNEgQr2ioZSe17803bEP0uACKgB/s1600/ecliDWP-02_a.jpg" imageanchor="1" style="clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;"><img border="0" height="140" src="https://2.bp.blogspot.com/-JTTcrr6NS68/V2fjB4BmU0I/AAAAAAAAAs4/eM9rWCuJhjwNEgQr2ioZSe17803bEP0uACKgB/s320/ecliDWP-02_a.jpg" width="320" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">thread application server</td></tr></tbody></table>
+
+            </div>
+        </div>
+
+
+    </div>
+
+  
+
+
+
+</body>
+
+</html>

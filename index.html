@@ -1,32 +1,596 @@
----
-layout: layout1
-root: ../
----
-<section id="rel2">
+<html>
+
+     <head>
+  <title>poldonet</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- link rel="stylesheet" href="/themesleo/assets/css/main.css" / -->
+  <link rel="stylesheet" href="/assets/css/w3.css" />
+  <script src="/assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/lunr.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/skel.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/util.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+	div.relative {
+		float: left;
+		max-width:500px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		left: 20px;
+		background-color: #785EDD;
+		border: 3px solid #73AD21;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		
+	}
+
+		div.borderleo {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1%;
+		text-align: left;
+		padding: 14px 16px;
+		text-decoration: none;
+
+
+		border: 3px solid #73AD21;
+		
+	}
+	div.cpre {
+			margin-right: 2%;{content: "\200B";};
+    }
+
+    div.controls-wrapper{}
+	</style>
+
+	<script>
+
+function changecolor() {
+    var colors = ["#B40404", "#0000FF", "#FE2E9A", "#FF0080", "#2EFE2E", ];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#controls-wrapper').css("background-color", colors[rand]);
+    setTimeout('changecolor()', 1000);
+}
+	</script>
+<script>
+    function random_post_bg_color() {
+        var x = Math.floor(Math.random() * 200);
+        var y = Math.floor(Math.random() * 200);
+        var z = Math.floor(Math.random() * 200);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(bgColor);
+
+        document.getElementById("post_color").style.backgroundColor = bgColor;
+        document.getElementById("post_color").style.display = 'block';
+        }       
+
+</script>
+
+	<script>
+        function hideElemetId(){
+		document.getElementById("nameid").style.display = 'none';
+	}
+</script>
+
+	<script>
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+
+		document.body.style.background = bgColor;
+		//document.div.backgroundColor = bgColor;
+		}
+</script>
+
+
+
+
+  	<script>
+function w3_open() {
+	  document.getElementById("main").style.marginLeft = "25%";
+	    document.getElementById("mySidebar").style.width = "25%";
+	      document.getElementById("mySidebar").style.display = "block";
+	        document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	    document.getElementById("mySidebar").style.display = "none";
+	      document.getElementById("openNav").style.display = "inline-block";
+}
+   </script>
+
+
+<!--
+	<script>
+	setInterval(function () { 
+	  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+	    }, 1000);
+	</script>
+
+-->
+
+</head>
+ 
+
+
+<body onload="random_bg_color()">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      
+<!-- test sidebar -->
+<nav id="rel3">
+<!-- Sidebar -->
+<p>
+<div class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+	    <li><a href="/assets/resources/myprofile.html"><section id="mycv1d">
+<p>
+<pre>
+leopoldo 'poldo' tosi
+</pre></p>
+</section>
+</a></li>
+            <li><a href="/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
+            <li><a href="https://librescuola.org/">Libre Scuola</a></li>
+            <li><a href="https://#">OpenLabs</a></li>
+          </ul>
+    <div  class="w3-bar-item">
+
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <b>Scrivi a PoldoNet</b>
+          </header>
+	  <p>Hai dubbi, perplessità, ti serve aiuto o <br /> hai idee da proporre? Mandaci una mail!</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="mailto:leopoldotosi@tiscali.it"></a></li>
+            <!--TODO<li class="fa-phone"></li>-->
+            <!--TODO<li class="fa-home"><br/>
+            ,  <br/>
+            </li>-->
+          </ul>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>poldonet</br>associazione di promozione sociale</br>
+          CF: </br>IVA: </p>
+
+          <p class="copyright">&copy; 
+	  I documenti PoldoNet sono rilasciati sotto licenza <br /> <a href="https://creativecommons.org/licenses/by/3.0/it/deed.en_US">Creative Commons Attribution 3.0 Italy License</a>.
+          </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <div class="w3-teal w3-bar">
+        <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position: absolute; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3></h3> </div>
+	     
+<form action="/search" method="get" > 
+	<input type="text" id="search-query" name="q" class="w3-bar-item w3-display-right" style="top: 5%;text-align: left; width: 20%;" placeholder="not google, just lunr.js search" autocomplete="off"> 
+</form>
+
+
+<section id="search-results" style="display: none;"> 
+
+	
+	<script id="search-results-template" type="text/mustache">
+		{{#entries}}
+		<article>
+			<h3>
+				{{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+				<a href="{{url}}">{{title}}</a>
+			</h3>
+			{{#is_post}}
+			<ul>
+				{{#tags}}<li>{{.}} </li>{{/tags}}
+			</ul>
+			{{/is_post}}
+		</article>
+		{{/entries}}
+	</script>
+	
+
+
+
+	<script type="text/javascript">
+		$(function() {
+			$('#search-query').lunrSearch({
+				indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+				results   : '#search-results',          // selector for containing search results element
+				template  : '#search-results-template', // selector for Mustache.js template
+				titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+				emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+			});
+		});
+	</script>
+</section>
+
+
+ 
+    </div>
+
+
+</p>
+</nav>
+
+        <!-- Main -->
+        <div id="main">
+
+
+
+
+            <div class="inner">
+
+    <!--  -->
+
+                <section id="rel2">
 
 <p>
 <div class="tiles">
-	{% for post in site.posts %}
+	
     <div class="relative">
 	<article>
-		<b>{{ post.title }}</b>
-		<!-- b> {{ post.excerpt | truncatewords:15 }}  </b -->
-		<ul class="actions"> <li><a href="{{site.baseurl}}{{post.url}}" class="button">More</a></li> </ul>
+		<b>xpdf: the source is well</b>
+		<!-- b> <table style="width:100%" border=1> <tr> <td> Ci sono molti visualizzatori pdf, però verso alcuni vi è...  </b -->
+		<ul class="actions"> <li><a href="/2017/09/07/xpdf-source-is-well.html" class="button">More</a></li> </ul>
 	</article>
 
     </div>
-	{% endfor %}
+	
+    <div class="relative">
+	<article>
+		<b>il_calibre_che_non_posso</b>
+		<!-- b> siamo qui riuniti per celebrare il libro digitale, che per i tempi odierni e le...  </b -->
+		<ul class="actions"> <li><a href="/2016/11/26/ilcalibrechenonposso.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>l_errata_circostanza_nel_nocciolo</b>
+		<!-- b> Capita che per sfizio, curiosità, esigenze si abbia voglia di metter mano dove non si...  </b -->
+		<ul class="actions"> <li><a href="/2016/10/27/lerrata-circostanzanelnocciolo.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>Sviluppo_del_prossimo_remoto</b>
+		<!-- b> <span class="short_text" id="result_box" lang="en">Development <span class="">of the next</span> <span class="">remote</span></span><br /><br /><span class="short_text" id="result_box" lang="en"><span...  </b -->
+		<ul class="actions"> <li><a href="/2016/06/20/sviluppodelprossimoremoto.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>ORC-the_image_literature</b>
+		<!-- b> <a href="http://http//poldonet.blogspot.com/2016/05/ocr-laletteraturadelimmagine.html">ITA</a> <br /><table border="1" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: 1em; text-align: right;"><tbody><tr><td style="text-align: center;"><a href="https://1.bp.blogspot.com/-f2NoRHakB-8/VzGs1_UTtKI/AAAAAAAAAsA/6TcegJnCMpEP1JKTaTUZOroyuRId3xgIQCKgB/s1600/ocr-03-a.jpg"...  </b -->
+		<ul class="actions"> <li><a href="/2016/05/12/orc-theimageliterature.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>OCR-La_letteratura_del_immagine</b>
+		<!-- b> <div><a href="http://poldonet.blogspot.com/2016/05/orc-theimageliterature.html">ENG</a><br />Spesso capita di avere pdf o gif con testo come immagine, scansioni di...  </b -->
+		<ul class="actions"> <li><a href="/2016/05/12/ocr-laletteraturadelimmagine.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>vlock-a(ccess)n(o)</b>
+		<!-- b> <table border="0" style="width: 80%px;"><tbody><tr><td>Le suite gnome, kde, ecc... sono belle e piene di utilities. Ma...  </b -->
+		<ul class="actions"> <li><a href="/2016/04/12/vlock-accessno.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>firefox_readable</b>
+		<!-- b> <table border="0" style="width: 80%px;"><tbody><tr><td><b>Incredibile, dopo anni ho trovato una definizione accettabile per la visualizzazione delle...  </b -->
+		<ul class="actions"> <li><a href="/2016/03/02/firefoxreadable.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>Liferay_commings</b>
+		<!-- b> Qui vediamo come installare e avviare per 30 gg, licenza prove, liferay ee<br /><br /><br...  </b -->
+		<ul class="actions"> <li><a href="/2015/12/29/liferaycommings.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>the fixed recorder,Vokoscreen</b>
+		<!-- b> <br /><span class="short_text" id="result_box" lang="en"><span class="">It is a graphical interface</span> <span class="hps">for</span></span> <b>avconv</b> <span class="short_text"...  </b -->
+		<ul class="actions"> <li><a href="/2015/10/02/the-fixed-recordervokoscreen.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>la fissa del registratore, vokoscreen</b>
+		<!-- b> <br />è l'interfaccia graffica per&nbsp;<b>avconv</b>&nbsp;semplice e intuitiva permette di registrare il desktop o una sua...  </b -->
+		<ul class="actions"> <li><a href="/2015/10/02/la-fissa-del-registratore-vokoscreen.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>vim_multi-lingue</b>
+		<!-- b> A chi piacciono gli editors testuali uno dei più potenti è vi(vim) <br /><div class="separator"...  </b -->
+		<ul class="actions"> <li><a href="/2015/08/24/vimmulti-lingue.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>skype-muto</b>
+		<!-- b> <a href="http://www.aspesi-associazione.it/public/files/2015/CensimentoPopolazione_abitazioni_istat2011_Maggio2015-rev1.pdf" target="_blank"><b>l'ance coi dati</b> </a> del <a href="http://dati-censimentopopolazione.istat.it/" target="_blank"><b>censimento del 2011</b></a> ha eseguito la...  </b -->
+		<ul class="actions"> <li><a href="/2015/07/13/skype-muto.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>update-menus</b>
+		<!-- b> A little trick :D about menu<br /><br />I usually work with fluxbox, because is light...  </b -->
+		<ul class="actions"> <li><a href="/2015/05/19/update-menus.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>Mutt.imap</b>
+		<!-- b> <h3>Le caselle di posta da shell. :D</h3>Mutt è un client di posta veramente versatile e...  </b -->
+		<ul class="actions"> <li><a href="/2015/05/07/muttimap.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>systemd-il-mistero-svelato</b>
+		<!-- b> <b>systemd</b> è un ottimo tool di avvio e gestione dei runlevel che ottimizza l'esecusione dei...  </b -->
+		<ul class="actions"> <li><a href="/2014/10/28/systemd-il-mistero-svelato.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>drm-off</b>
+		<!-- b> <br /><br />con 2 terminali entrare nella diretory di adobe<br /><br />dove si avvia Epub.....  </b -->
+		<ul class="actions"> <li><a href="/2014/08/20/drm-off.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>lab4</b>
+		<!-- b> networks device<br /><br /><b>in elaborazione</b>   </b -->
+		<ul class="actions"> <li><a href="/2014/01/27/lab4.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>en_lab4</b>
+		<!-- b> networks device<br /><br /><b>not ready</b>   </b -->
+		<ul class="actions"> <li><a href="/2014/01/27/enlab4.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>en_lab3</b>
+		<!-- b> <b>this time we show a service dhcpd.</b><br /><br /><b>request:&nbsp;</b><br /><b>dhcpd service installed and down.</b><br /><br...  </b -->
+		<ul class="actions"> <li><a href="/2014/01/27/enlab3.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>en_lab2</b>
+		<!-- b> <b>now we talk about ftp service in core:</b><br /><b><br /></b><b>request: ftpd service installed. Core uses...  </b -->
+		<ul class="actions"> <li><a href="/2014/01/27/enlab2.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>en_lab1</b>
+		<!-- b> <b>verify the correct operation of the emulator core on debian:</b><br /><br />files :<br /><br />#...  </b -->
+		<ul class="actions"> <li><a href="/2014/01/27/enlab1.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>core-lab3_dhcp</b>
+		<!-- b> questo terzo appuntamento vedremo un servizio dhcp con connessione al host ospite:<br /><br />requisiti:<br /><br...  </b -->
+		<ul class="actions"> <li><a href="/2014/01/22/core-lab3dhcp.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>core_lab2_ftp</b>
+		<!-- b> in questo secondo appuntamento vedremo come implementare il servizio ftp<br />in <a href="http://downloads.pf.itd.nrl.navy.mil/docs/core/core-html/">core</a>.<br /><br />requisiti:...  </b -->
+		<ul class="actions"> <li><a href="/2014/01/22/corelab2ftp.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>core_lab1 ssh</b>
+		<!-- b> verifica del corretto funzionamento del emulatore&nbsp;<a href="http://www.nrl.navy.mil/itd/ncs/products/core">core</a> su debian:<br /><br />files :<br /><br /># ls...  </b -->
+		<ul class="actions"> <li><a href="/2014/01/22/corelab1-ssh.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
+    <div class="relative">
+	<article>
+		<b>lab_1 cisco</b>
+		<!-- b> <a href="http://bp0.blogger.com/_Nro3qO5srvk/R6co51FMutI/AAAAAAAAAAQ/NEcmXc09v40/s1600-h/lan_acl1.GIF"><img alt="" border="0" src="http://bp0.blogger.com/_Nro3qO5srvk/R6co51FMutI/AAAAAAAAAAQ/NEcmXc09v40/s320/lan_acl1.GIF" id="BLOGGER_PHOTO_ID_5163140471770102482" style="cursor: hand; float: left; margin: 0px 10px 10px 0px;"...  </b -->
+		<ul class="actions"> <li><a href="/2008/02/04/il-seguente-lab-ha-lo-scopo-di-mostrare.html" class="button">More</a></li> </ul>
+	</article>
+
+    </div>
+	
 	
     <div class="relative">
 		<ul class="actions"> 
-	{% for p in site.pages %}
+	
 	<!-- -->
-			<li>{{site.baseurl}}{{p.url}}</li> 
-			<li>{{site.baseurl}}{{p.path}}</li> 
-			<li>{{site.baseurl}}{{p.relative_path}}</li> 
+			<li>/culturadigitale/cultura-digitale.html</li> 
+			<li>culturadigitale/cultura-digitale.md</li> 
+			<li></li> 
 	
 
-	{% endfor %}
+	
+	<!-- -->
+			<li>/culturadigitale/il-lato-oscuro-degli-algoritmi.html</li> 
+			<li>culturadigitale/il-lato-oscuro-degli-algoritmi.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/</li> 
+			<li>index.html</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/l-algoritmo-comanda-il-mondo.html</li> 
+			<li>culturadigitale/l-algoritmo-comanda-il-mondo.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/la-politica-dei-dati.html</li> 
+			<li>culturadigitale/la-politica-dei-dati.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/assets/resources/myprofile.html</li> 
+			<li>assets/resources/myprofile.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/assets/resources/present.html</li> 
+			<li>assets/resources/present.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/psiche-techne.html</li> 
+			<li>culturadigitale/psiche-techne.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/robot-razzisti.html</li> 
+			<li>culturadigitale/robot-razzisti.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/sesso-online.html</li> 
+			<li>culturadigitale/sesso-online.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/sulla-scuola.html</li> 
+			<li>culturadigitale/sulla-scuola.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/taylorismo-digitale.html</li> 
+			<li>culturadigitale/taylorismo-digitale.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/culturadigitale/yuval-sul-futuro.html</li> 
+			<li>culturadigitale/yuval-sul-futuro.md</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/sitemap.xml</li> 
+			<li>sitemap.xml</li> 
+			<li></li> 
+	
+
+	
+	<!-- -->
+			<li>/robots.txt</li> 
+			<li>robots.txt</li> 
+			<li></li> 
+	
+
+	
 	
 		</ul>
     </div>
@@ -34,3 +598,18 @@ root: ../
 </div>
 </p>
 </section>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+   
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<html>
+
+     <head>
+  <title>poldonet</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- link rel="stylesheet" href="/themesleo/assets/css/main.css" / -->
+  <link rel="stylesheet" href="/assets/css/w3.css" />
+  <script src="/assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/lunr.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/skel.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/util.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+	div.relative {
+		float: left;
+		max-width:500px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		left: 20px;
+		background-color: #785EDD;
+		border: 3px solid #73AD21;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		
+	}
+
+		div.borderleo {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1%;
+		text-align: left;
+		padding: 14px 16px;
+		text-decoration: none;
+
+
+		border: 3px solid #73AD21;
+		
+	}
+	div.cpre {
+			margin-right: 2%;{content: "\200B";};
+    }
+
+    div.controls-wrapper{}
+	</style>
+
+	<script>
+
+function changecolor() {
+    var colors = ["#B40404", "#0000FF", "#FE2E9A", "#FF0080", "#2EFE2E", ];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#controls-wrapper').css("background-color", colors[rand]);
+    setTimeout('changecolor()', 1000);
+}
+	</script>
+<script>
+    function random_post_bg_color() {
+        var x = Math.floor(Math.random() * 200);
+        var y = Math.floor(Math.random() * 200);
+        var z = Math.floor(Math.random() * 200);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(bgColor);
+
+        document.getElementById("post_color").style.backgroundColor = bgColor;
+        document.getElementById("post_color").style.display = 'block';
+        }       
+
+</script>
+
+	<script>
+        function hideElemetId(){
+		document.getElementById("nameid").style.display = 'none';
+	}
+</script>
+
+	<script>
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+
+		document.body.style.background = bgColor;
+		//document.div.backgroundColor = bgColor;
+		}
+</script>
+
+
+
+
+  	<script>
+function w3_open() {
+	  document.getElementById("main").style.marginLeft = "25%";
+	    document.getElementById("mySidebar").style.width = "25%";
+	      document.getElementById("mySidebar").style.display = "block";
+	        document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	    document.getElementById("mySidebar").style.display = "none";
+	      document.getElementById("openNav").style.display = "inline-block";
+}
+   </script>
+
+
+<!--
+	<script>
+	setInterval(function () { 
+	  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+	    }, 1000);
+	</script>
+
+-->
+
+</head>
+ 
+
+
+<body onload="random_bg_color()">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+ 
+<!-- test sidebar -->
+<nav id="rel3">
+<!-- Sidebar -->
+<p>
+<div class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+	    <li><a href="/assets/resources/myprofile.html"><section id="mycv1d">
+<p>
+<pre>
+leopoldo 'poldo' tosi
+</pre></p>
+</section>
+</a></li>
+            <li><a href="/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
+            <li><a href="https://librescuola.org/">Libre Scuola</a></li>
+            <li><a href="https://#">OpenLabs</a></li>
+          </ul>
+    <div  class="w3-bar-item">
+
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <b>Scrivi a PoldoNet</b>
+          </header>
+	  <p>Hai dubbi, perplessità, ti serve aiuto o <br /> hai idee da proporre? Mandaci una mail!</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="mailto:leopoldotosi@tiscali.it"></a></li>
+            <!--TODO<li class="fa-phone"></li>-->
+            <!--TODO<li class="fa-home"><br/>
+            ,  <br/>
+            </li>-->
+          </ul>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>poldonet</br>associazione di promozione sociale</br>
+          CF: </br>IVA: </p>
+
+          <p class="copyright">&copy; 
+	  I documenti PoldoNet sono rilasciati sotto licenza <br /> <a href="https://creativecommons.org/licenses/by/3.0/it/deed.en_US">Creative Commons Attribution 3.0 Italy License</a>.
+          </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <div class="w3-teal w3-bar">
+        <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position: absolute; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3></h3> </div>
+	     
+<form action="/search" method="get" > 
+	<input type="text" id="search-query" name="q" class="w3-bar-item w3-display-right" style="top: 5%;text-align: left; width: 20%;" placeholder="not google, just lunr.js search" autocomplete="off"> 
+</form>
+
+
+<section id="search-results" style="display: none;"> 
+
+	
+	<script id="search-results-template" type="text/mustache">
+		{{#entries}}
+		<article>
+			<h3>
+				{{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+				<a href="{{url}}">{{title}}</a>
+			</h3>
+			{{#is_post}}
+			<ul>
+				{{#tags}}<li>{{.}} </li>{{/tags}}
+			</ul>
+			{{/is_post}}
+		</article>
+		{{/entries}}
+	</script>
+	
+
+
+
+	<script type="text/javascript">
+		$(function() {
+			$('#search-query').lunrSearch({
+				indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+				results   : '#search-results',          // selector for containing search results element
+				template  : '#search-results-template', // selector for Mustache.js template
+				titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+				emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+			});
+		});
+	</script>
+</section>
+
+
+ 
+    </div>
+
+
+</p>
+</nav>
+
+
+        <!-- Main -->
+        <div id="main">
+ 
+
+            <div class="borderleo" id="post_color" onclick="random_post_bg_color()">
+
+                <p><em>Di chi è la colpa se i robot sono razzisti</em>
+di Laurie Penny(pubblicato su internazionale 1203)</p>
+
+<p>Le macchine possono pensare? E possono pensare in modo critico su questioni razziali e di genere? Alcuni studi recenti hanno dimostrato che i sistemi di apprendimento automatico riprendono le idee razziste e sessiste racchiuse nei  nostri schemi linguistici. <em>L’idea che le macchine possano avere gli stessi pregiudizi delle persone è fastidiosa per chi crede ancora nella purezza morale del mondo digitale</em>, ma non è una novità . Come spiega Lydia Nicholas, ricercatrice del centro di ricerca britannico Nesta,<em>i dati su cui si basano i sistemi d’apprendimento automatico “sono stati per forza raccolti nel passato e, dato che la società  cambia, rischiamo di usare dei modelli obsoleti e quindi di produrre discriminazioni inaccettabili</em>”. <em>I robot sono razzisti e sessisti perché le persone che li creano sono sessiste e razziste.</em> Del resto le macchine non fanno altro che elaborare le informazioni fornite dagli uomini bianchi ed eterosessuali che dominano il mondo della  tecnologia.  Nel 1986 la scuola di medicina dell’ospedale Saint George di Londra fu condannata per discriminazione razziale e sessuale, dopo che aveva automatizzato la selezione dei nuovi studenti usando dati raccolti negli anni settanta.</p>
+
+<p>Il programma si basava solo sui candidati che avevano avuto successo in passato e convocava ai colloqui d’ammissione le persone compatibili con quei profili. Com’era prevedibile, il computer sceglieva maschi con nomi anglosassoni.  <em>L’automazione è¨ un’ottima scusa per fare gli stronzi:</em> dopotutto si tratta solo di numeri,  e la magia della raccolta dei dati permette di negare che ci siano dei pregiudizi. <em>L’apprendimento automatico</em>, come ha osservato l’esperto di tecnologia Maciej Cegìowski, <em>può funzionare come uno strumento per riciclare i pregiudizi, un po’ come succede con il denaro sporco</em>. Le cose peggioreranno se non risolveremo questo problema, perché in futuro le macchine “intelligenti” avranno sempre più influenza sulle nostre vite.</p>
+
+<ul>
+  <li>L’anno scorso la Microsoft ha creato un chat bot (<em>un programma che simula una conversazione intelligente con gli esseri umani) chiamato Tay, in grado di “imparare” grazie all’interazione con gli utenti dei social network. *Nel giro di poche ore Tay aveva dichiarato</em> <em>fedeltà a Hitler e cominciato a ripetere slogan della alt-right, l’estrema destra statunitense.</em></li>
+</ul>
+
+<p>E non è¨ un caso isolato: una ricerca d’immagini di Google, che sfruttava una tecnologia “allenata” a riconoscere i volti basandosi su quelli di persone bianche, ha incluso i neri tra i risultati di una ricerca relativa ai gorilla. Dobbiamo forse costruire dei robot dotati di morale, di un senso di giustizia ed equità? Ho l’orrenda sensazione di trovarmi di fronte a un film già visto, che non finisce bene per gli esseri umani.*</p>
+
+<p>Le macchine imparano il linguaggio processando enormi quantità  di articoli disponibili su internet.* Tutte le voci di uomini bianchi e occidentali che hanno dominato il mondo della letteratura e dell’editoria per secoli si sono fossilizzate nei modelli linguistici contemporanei, insieme alle opinioni che quegli uomini avevano delle persone diverse da loro. Stiamo progettando robot che riflettono i nostri pregiudizi.</p>
+
+<p>Con gli esseri umani, del resto, succede la stessa cosa. La nostra comprensione del mondo si basa sul linguaggio e sulle storie delle precedenti generazioni. Fin da piccoli, ci insegnano che la parola “uomini” può significare anche “tutti gli esseri umani”, ma questo non vale per la parola “donne”. Essere femmine significa appartenere a una sotto classe di persone. Quando i politici e i nostri genitori parlano di come qualcuno si comporta con la “sua gente”, a volte si riferiscono a “persone dello stesso   gruppo razziale”. E quindi finiamo per pensare che chi ha un colore della pelle diverso dal nostro non è uno di “noi”. In inglese esistono i pronomi he e she (lui e lei): questo vuol dire che il genere è  una caratteristica decisiva nel definire una persona e non ne esistono più di due. Per questo chi lotta per la giustizia sociale spesso parte dal linguaggio, mentre i difensori dei pregiudizi parlano di “polizia linguistica”, come se l’uso delle parole non avesse a che fare con la realtà  che le parole creano.</p>
+
+<p>Gli esseri umani, a differenza delle macchine, sono dotati di facoltà morali: siamo in grado di correggere  i nostri pregiudizi e dovremmo farlo. A volte non riusciamo a essere equi come vorremmo. Non perché scegliamo di essere intolleranti e prepotenti, ma perché partiamo da tesi su appartenenza razziale, genere e differenze sociali che ci hanno insegnato quando eravamo piccoli. <em>Abbiamo schemi di comportamento basati su informazioni sbagliate. Questo non ci rende per forza delle cattive persone, ma siamo responsabili del nostro comportamento. *Gli algoritmi dovrebbero aggiornare le loro reazioni sulla base di nuove e più complete informazioni, e</em>il problema morale viene fuori quando le persone si rifiutano di fare lo stesso.*</p>
+
+<p>Se ce la fa un robot, possiamo farcela anche noi.</p>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+  
+
+
+
+</body>
+
+</html>

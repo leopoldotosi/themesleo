@@ -1,0 +1,258 @@
+<html>
+
+     <head>
+  <title>poldonet</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!-- link rel="stylesheet" href="/themesleo/assets/css/main.css" / -->
+  <link rel="stylesheet" href="/assets/css/w3.css" />
+  <script src="/assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/lunr.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/skel.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/util.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script> 
+  <script src="/js/mustache.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+  <style>
+	div.relative {
+		float: left;
+		max-width:500px;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		left: 20px;
+		background-color: #785EDD;
+		border: 3px solid #73AD21;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		
+	}
+
+		div.borderleo {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 1%;
+		text-align: left;
+		padding: 14px 16px;
+		text-decoration: none;
+
+
+		border: 3px solid #73AD21;
+		
+	}
+	div.cpre {
+			margin-right: 2%;{content: "\200B";};
+    }
+
+    div.controls-wrapper{}
+	</style>
+
+	<script>
+
+function changecolor() {
+    var colors = ["#B40404", "#0000FF", "#FE2E9A", "#FF0080", "#2EFE2E", ];
+    var rand = Math.floor(Math.random() * colors.length);
+    $('#controls-wrapper').css("background-color", colors[rand]);
+    setTimeout('changecolor()', 1000);
+}
+	</script>
+<script>
+    function random_post_bg_color() {
+        var x = Math.floor(Math.random() * 200);
+        var y = Math.floor(Math.random() * 200);
+        var z = Math.floor(Math.random() * 200);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        console.log(bgColor);
+
+        document.getElementById("post_color").style.backgroundColor = bgColor;
+        document.getElementById("post_color").style.display = 'block';
+        }       
+
+</script>
+
+	<script>
+        function hideElemetId(){
+		document.getElementById("nameid").style.display = 'none';
+	}
+</script>
+
+	<script>
+	function random_bg_color() {
+		var x = Math.floor(Math.random() * 256);
+		var y = Math.floor(Math.random() * 256);
+		var z = Math.floor(Math.random() * 256);
+		var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+		console.log(bgColor);
+
+		document.body.style.background = bgColor;
+		//document.div.backgroundColor = bgColor;
+		}
+</script>
+
+
+
+
+  	<script>
+function w3_open() {
+	  document.getElementById("main").style.marginLeft = "25%";
+	    document.getElementById("mySidebar").style.width = "25%";
+	      document.getElementById("mySidebar").style.display = "block";
+	        document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+	  document.getElementById("main").style.marginLeft = "0%";
+	    document.getElementById("mySidebar").style.display = "none";
+	      document.getElementById("openNav").style.display = "inline-block";
+}
+   </script>
+
+
+<!--
+	<script>
+	setInterval(function () { 
+	  document.getElementById("fancy").style.background= '#'+Math.floor(Math.random()*16777215).toString(16);
+	  document.body.style.background= '#'+Math.floor(Math.random()*16777215).toString(16);  
+	    }, 1000);
+	</script>
+
+-->
+
+</head>
+ 
+
+
+<body onload="random_bg_color()">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+ 
+<!-- test sidebar -->
+<nav id="rel3">
+<!-- Sidebar -->
+<p>
+<div class="w3-sidebar w3-bar-block w3-red w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+	    <li><a href="/assets/resources/myprofile.html"><section id="mycv1d">
+<p>
+<pre>
+leopoldo 'poldo' tosi
+</pre></p>
+</section>
+</a></li>
+            <li><a href="/culturadigitale/cultura-digitale.html">Cultura Digitale</a></li>
+            <li><a href="https://librescuola.org/">Libre Scuola</a></li>
+            <li><a href="https://#">OpenLabs</a></li>
+          </ul>
+    <div  class="w3-bar-item">
+
+      <!-- Section -->
+        <section>
+          <header class="major">
+            <b>Scrivi a PoldoNet</b>
+          </header>
+	  <p>Hai dubbi, perplessità, ti serve aiuto o <br /> hai idee da proporre? Mandaci una mail!</p>
+          <ul class="contact">
+            <li class="fa-envelope-o"><a href="mailto:leopoldotosi@tiscali.it"></a></li>
+            <!--TODO<li class="fa-phone"></li>-->
+            <!--TODO<li class="fa-home"><br/>
+            ,  <br/>
+            </li>-->
+          </ul>
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>poldonet</br>associazione di promozione sociale</br>
+          CF: </br>IVA: </p>
+
+          <p class="copyright">&copy; 
+	  I documenti PoldoNet sono rilasciati sotto licenza <br /> <a href="https://creativecommons.org/licenses/by/3.0/it/deed.en_US">Creative Commons Attribution 3.0 Italy License</a>.
+          </p>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <div class="w3-teal w3-bar">
+        <button id="openNav" class="w3-bar-item w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+	<div class="w3-bar-item w3-deep-purple" align="center" style="position: absolute; right: 50%; top: 1%;" id="nameid" onscroll="hideElemetId()"> <h3></h3> </div>
+	     
+<form action="/search" method="get" > 
+	<input type="text" id="search-query" name="q" class="w3-bar-item w3-display-right" style="top: 5%;text-align: left; width: 20%;" placeholder="not google, just lunr.js search" autocomplete="off"> 
+</form>
+
+
+<section id="search-results" style="display: none;"> 
+
+	
+	<script id="search-results-template" type="text/mustache">
+		{{#entries}}
+		<article>
+			<h3>
+				{{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+				<a href="{{url}}">{{title}}</a>
+			</h3>
+			{{#is_post}}
+			<ul>
+				{{#tags}}<li>{{.}} </li>{{/tags}}
+			</ul>
+			{{/is_post}}
+		</article>
+		{{/entries}}
+	</script>
+	
+
+
+
+	<script type="text/javascript">
+		$(function() {
+			$('#search-query').lunrSearch({
+				indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+				results   : '#search-results',          // selector for containing search results element
+				template  : '#search-results-template', // selector for Mustache.js template
+				titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+				emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+			});
+		});
+	</script>
+</section>
+
+
+ 
+    </div>
+
+
+</p>
+</nav>
+
+
+        <!-- Main -->
+        <div id="main">
+ 
+
+            <div class="borderleo" id="post_color" onclick="random_post_bg_color()">
+
+                verifica del corretto funzionamento del emulatore&nbsp;<a href="http://www.nrl.navy.mil/itd/ncs/products/core">core</a> su debian:<br /><br />files :<br /><br /># ls /etc/core/ -l<br />total 12<br />-rw-r--r-- 1 root root 1419 Aug 23 18:30 core.conf<br />-rw-r--r-- 1 root root 1094 Oct 30 12:03 perflogserver.conf<br />-rw-r--r-- 1 root root 1569 Nov 30&nbsp; 2012 xen.conf<br /><br /><br /># ls /etc/quagga/ -l<br />total 8<br />lrwxrwxrwx 1 root root&nbsp; 33 Jan 17 11:15 babeld.conf -&gt; /usr/local/etc/quagga/babeld.conf<br />lrwxrwxrwx 1 root root&nbsp; 31 Jan 17 11:15 bgpd.conf -&gt; /usr/local/etc/quagga/bgpd.conf<br />-rw-r--r-- 1 root root 998 Jan 17 10:59 daemons<br />-rw-r--r-- 1 root root 945 Nov 26 01:32 debian.conf<br />lrwxrwxrwx 1 root root&nbsp; 32 Jan 17 11:15 isisd.conf -&gt; /usr/local/etc/quagga/isisd.conf<br />lrwxrwxrwx 1 root root&nbsp; 33 Jan 17 11:15 ospf6d.conf -&gt; /usr/local/etc/quagga/ospf6d.conf<br />lrwxrwxrwx 1 root root&nbsp; 32 Jan 17 11:15 ospfd.conf -&gt; /usr/local/etc/quagga/ospfd.conf<br />lrwxrwxrwx 1 root root&nbsp; 33 Jan 16 21:23 Quagga.conf -&gt; /usr/local/etc/quagga/Quagga.conf<br />lrwxrwxrwx 1 root root&nbsp; 31 Jan 17 11:15 ripd.conf -&gt; /usr/local/etc/quagga/ripd.conf<br />lrwxrwxrwx 1 root root&nbsp; 33 Jan 17 11:15 ripngd.conf -&gt; /usr/local/etc/quagga/ripngd.conf<br />lrwxrwxrwx 1 root root&nbsp; 32 Jan 16 21:23 vtysh.conf -&gt; /usr/local/etc/quagga/vtysh.conf<br />lrwxrwxrwx 1 root root&nbsp; 32 Jan 17 11:15 zebra.conf -&gt; /usr/local/etc/quagga/zebra.conf<br /><br /># ls -l /usr/local/etc/quagga/<br />total 40<br />-rw-r--r-- 1 root staff&nbsp; 655 Jan 17 11:12 babeld.conf<br />-rw-r--r-- 1 root staff 2801 Jan 17 11:12 bgpd.conf<br />-rw-r--r-- 1 root staff&nbsp; 805 Jan 17 11:12 isisd.conf<br />-rw-r--r-- 1 root staff 1110 Jan 17 11:12 ospf6d.conf<br />-rw-r--r-- 1 root staff&nbsp; 182 Jan 17 11:12 ospfd.conf<br />-rw-r--r-- 1 root staff&nbsp;&nbsp; 39 Jan 17 11:19 Quagga.conf<br />-rw-r--r-- 1 root staff&nbsp; 422 Jan 17 11:12 ripd.conf<br />-rw-r--r-- 1 root staff&nbsp; 390 Jan 17 11:12 ripngd.conf<br />-rw-r--r-- 1 root staff&nbsp; 126 Jan 17 11:12 vtysh.conf<br />-rw-r--r-- 1 root staff&nbsp; 385 Jan 17 11:18 zebra.conf<br /><br />qui trovate gli esempi e file di configurazione<br />se non fossero installati<br /><br /># ls /usr/share/core/icons/<br />normal&nbsp;&nbsp;&nbsp; svg&nbsp; tiny<br /><br />&nbsp;# ls /usr/share/doc/core-network<br />core-network/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; core-network-daemon/ core-network-gui/&nbsp;&nbsp; <br /><br /># ls /usr/share/doc/core-network-gui/examples/configs/sample*<br />/usr/share/doc/core-network-gui/examples/configs/sample10-kitchen-sink.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample1-bg.gif<br />/usr/share/doc/core-network-gui/examples/configs/sample1.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample1.scen<br />/usr/share/doc/core-network-gui/examples/configs/sample2-ssh.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample3-bgp.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample4-bg.jpg<br />/usr/share/doc/core-network-gui/examples/configs/sample4-nrlsmf.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample4.scen<br />/usr/share/doc/core-network-gui/examples/configs/sample5-mgen.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample6-emane-rfpipe.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample7-emane-ieee80211abg.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample8-ipsec-service.imn<br />/usr/share/doc/core-network-gui/examples/configs/sample9-vpn.imn<br /><br />ls /usr/share/doc/quagga/examples/<br />babeld.conf.sample&nbsp; bgpd.conf.sample2&nbsp; ospf6d.conf.sample&nbsp; ripd.conf.sample&nbsp;&nbsp;&nbsp; vtysh.conf.sample<br />bgpd.conf.sample&nbsp;&nbsp;&nbsp; isisd.conf.sample&nbsp; ospfd.conf.sample&nbsp;&nbsp; ripngd.conf.sample&nbsp; zebra.conf.sample<br /><br />servizi da avviare:<br /><br />/etc/init.d/core-daemon start<br />/etc/init.d/quagga&nbsp;&nbsp;&nbsp; start<br /><br />processi:<br /><br />&nbsp;4937 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sl&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/bin/python /usr/sbin/core-daemon -d<br />&nbsp;4959 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/zebra --daemon -A 127.0.0.1<br />&nbsp;4963 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/bgpd --daemon -A 127.0.0.1<br />&nbsp;4967 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/ripd --daemon -A 127.0.0.1<br />&nbsp;4971 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/ripngd --daemon -A ::1<br />&nbsp;4975 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/ospfd --daemon -A 127.0.0.1<br />&nbsp;4979 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/ospf6d --daemon -A ::1<br />&nbsp;4983 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/isisd --daemon -A 127.0.0.1<br />&nbsp;4987 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/babeld --daemon -A 127.0.0.1<br /><br />porte :<br /><br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:2601&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18033&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4959/zebra&nbsp;&nbsp;&nbsp;&nbsp; <br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:2602&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18045&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4967/ripd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:2604&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18057&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4975/ospfd&nbsp;&nbsp;&nbsp;&nbsp; <br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:2605&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18038&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4963/bgpd&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:2608&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16744&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4983/isisd&nbsp;&nbsp;&nbsp;&nbsp; <br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:2609&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 120&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 18069&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4987/babeld&nbsp;&nbsp;&nbsp; <br />udp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:4038&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50773&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4937/python&nbsp;&nbsp;&nbsp; <br />tcp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 127.0.0.1:4038&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.0.0.0:*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LISTEN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 50768&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4937/python<br /><br />logs:<br /><br />ls -l /var/log/core-daemon.log <br />-rw-r--r-- 1 root root 68435 Jan 22 10:37 /var/log/core-daemon.log<br /><br />ls -l /var/log/quagga/<br />-rw-r----- 1 quagga quaggavty&nbsp; 0 Jan 22 09:31 zebra.log<br /><br />/var/log/syslog<br /><br />nei seguenti file nella home del utente si posssono modificare i parametri di default:<br /><br />&gt; ls .core/ -l<br />total 28<br />drwxr-xr-x 2 leopoldo leopoldo 4096 Jan 20 13:47 configs<br />drwxr-xr-x 2 leopoldo leopoldo 4096 Jan&nbsp; 9 14:23 myservices<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp; 754 Jan 16 22:03 nodes.conf<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp; 362 Jan 20 11:29 plugins.conf<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp; 887 Jan 20 15:35 prefs.conf<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp;&nbsp; 46 Jan&nbsp; 9 14:23 servers.conf<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp; 578 Jan&nbsp; 9 14:23 widgets.conf<br /><br />Avviamo core network emulator e aggiungiamo un nodo router dalla barra sulla sinistra, click sinistro sulla  griglia per aggiungere un nodo<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-W04M8PxzyWo/Ut-bZzuFXDI/AAAAAAAAAQo/FWi8B66F20M/s1600/core-add-node1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-W04M8PxzyWo/Ut-bZzuFXDI/AAAAAAAAAQo/FWi8B66F20M/s1600/core-add-node1.png" height="179" width="320" /></a></div><br />poi click destro sul nodo,menù a tendina, configure, tasto services, click ip_forward e facciamo la modifica sotto, abilitiamo pure ssh<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-0iVXsyj2AYI/Ut-bdFKksXI/AAAAAAAAAQw/G3hzLxVdMK8/s1600/core_ip_forward.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-0iVXsyj2AYI/Ut-bdFKksXI/AAAAAAAAAQw/G3hzLxVdMK8/s1600/core_ip_forward.png" height="179" width="320" /></a></div><br />torniamo alla griglia di lavoro, tasto destro sul nodo, menù a tendina, copy,<br /><br />paste sulla griglia e abbiamo un nodo route con le modifiche salvate.<br /><br />Aggiugiamo una connessione, e verranno generate in automatico gli ip:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-vdtRPsqk01w/Ut-efsBTa5I/AAAAAAAAAQ8/0vf562LUl-0/s1600/core_ip.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://3.bp.blogspot.com/-vdtRPsqk01w/Ut-efsBTa5I/AAAAAAAAAQ8/0vf562LUl-0/s1600/core_ip.png" height="179" width="320" /></a></div><br />avvio in modalità running, click destro su uno dei nodi, menù a tendina, shell window, vtysh, premere q per la linea di comando <br /><br />n1# ping 10.0.0.2<br />PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.<br />64 bytes from 10.0.0.2: icmp_req=1 ttl=64 time=0.060 ms<br />64 bytes from 10.0.0.2: icmp_req=2 ttl=64 time=0.042 ms<br />64 bytes from 10.0.0.2: icmp_req=3 ttl=64 time=0.063 ms<br />64 bytes from 10.0.0.2: icmp_req=4 ttl=64 time=0.069 ms<br /><br /><br />cosa viene virtualizzato?<br />vengono virtualizzati sia il nostro processo host che quagga<br /><br />&nbsp;6191 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/sbin/vnoded -v -c /tmp/pycore.10017/n1 -l /tmp/pycore.10017/n1.log -p /tmp/pycore.10017/n1.pid -C /tm<br />&nbsp;6317 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/lib/quagga/zebra -u root -g root -d<br />&nbsp;6370 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/lib/quagga/ospf6d -u root -g root -d<br />&nbsp;6371 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/lib/quagga/ospfd -u root -g root -d<br />&nbsp;6381 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/sbin/sshd -f /etc/ssh/sshd_config<br />&nbsp;6394 pts/4&nbsp;&nbsp;&nbsp; Ss+&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ vtysh<br />&nbsp;6201 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/sbin/vnoded -v -c /tmp/pycore.10017/n2 -l /tmp/pycore.10017/n2.log -p /tmp/pycore.10017/n2.pid -C /tm<br />&nbsp;6360 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/lib/quagga/zebra -u root -g root -d<br />&nbsp;6375 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/lib/quagga/ospf6d -u root -g root -d<br />&nbsp;6376 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/lib/quagga/ospfd -u root -g root -d<br />&nbsp;6380 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00&nbsp; \_ /usr/sbin/sshd -f /etc/ssh/sshd_config<br /><br /><br />e vengono creati una serie di file di configurazione sotto /tmp<br /><br />root@debian8:~#&nbsp; <br /># ls -l /tmp/pycore.10017/<br />total 80<br />srw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 Jan 22 11:43 n1<br />drwxrwxrwx 8 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4096 Jan 22 11:43 n1.conf<br />-rw-r--r-- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp; 17358 Jan 22 11:48 n1.log<br />-rw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 Jan 22 11:43 n1.pid<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp;&nbsp;&nbsp; 11 Jan 22 11:43 n1.xy<br />srw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0 Jan 22 11:43 n2<br />drwxrwxrwx 8 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4096 Jan 22 11:43 n2.conf<br />-rw-r--r-- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp; 17546 Jan 22 11:49 n2.log<br />-rw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 Jan 22 11:43 n2.pid<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp;&nbsp;&nbsp; 11 Jan 22 11:43 n2.xy<br />-rw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 137 Jan 22 11:43 nodes<br />-rw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13 Jan 22 11:43 servers<br />-rw-rw-rw- 1 root&nbsp;&nbsp;&nbsp;&nbsp; root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 Jan 22 11:43 state<br />-rw-r--r-- 1 leopoldo leopoldo&nbsp; 2005 Jan 22 11:43 thumb.jpg<br /><br />e questo è un singolo nodo:<br /><br /># file /tmp/pycore.10017/n2*<br />/tmp/pycore.10017/n2:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; socket<br />/tmp/pycore.10017/n2.conf: directory<br />/tmp/pycore.10017/n2.log:&nbsp; ASCII text<br />/tmp/pycore.10017/n2.pid:&nbsp; ASCII text<br />/tmp/pycore.10017/n2.xy:&nbsp;&nbsp; ASCII text<br /><br /># ls -l /tmp/pycore.10017/n2.conf<br />total 36<br />drwxrwxrwx 2 root root 4096 Jan 22 11:43 etc.ssh<br />-rw-r--r-- 1 root root&nbsp; 290 Jan 22 11:43 ipforward.sh<br />-rw-r--r-- 1 root root 2507 Jan 22 11:43 quaggaboot.sh<br />-rw-r--r-- 1 root root&nbsp; 234 Jan 22 11:43 startsshd.sh<br />drwxrwxrwx 2 root root 4096 Jan 22 11:43 usr.local.etc.quagga<br />drwxrwxrwx 2 root root 4096 Jan 22 11:43 var.log<br />drwxrwxrwx 5 root root 4096 Jan 22 11:43 var.run<br />drwxrwxrwx 2 root root 4096 Jan 22 11:43 var.run.quagga<br />drw-r-xr-x 2 root root 4096 Jan 22 11:43 var.run.sshd<br /><br /><br />nel menù widgets, obserbe widgets, process vediamo i processi attivi<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-t5V9lIjyLLQ/Ut-mG35gMVI/AAAAAAAAARM/EWTkCX5jG-U/s1600/core_process.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-t5V9lIjyLLQ/Ut-mG35gMVI/AAAAAAAAARM/EWTkCX5jG-U/s1600/core_process.png" height="179" width="320" /></a></div><br /><br />dalla shell bash:<br />&nbsp;root@n1:/tmp/pycore.10017/n1.conf#&nbsp; <br /># ps fax<br />&nbsp; PID TTY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; STAT&nbsp;&nbsp; TIME COMMAND<br />&nbsp;&nbsp;&nbsp; 1 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/sbin/vnoded -v -c /tmp/pycore.10017/n1 -l /tmp/p<br />&nbsp;&nbsp; 52 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/zebra -u root -g root -d<br />&nbsp;&nbsp; 60 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/ospf6d -u root -g root -d<br />&nbsp;&nbsp; 61 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/lib/quagga/ospfd -u root -g root -d<br />&nbsp;&nbsp; 65 ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /usr/sbin/sshd -f /etc/ssh/sshd_config<br />&nbsp;&nbsp; 88 pts/4&nbsp;&nbsp;&nbsp; Ss&nbsp;&nbsp;&nbsp;&nbsp; 0:00 /bin/bash<br /><br />aggiungiamo il resto dei nodi col copy/pasty e modifichiamo con menù a tendina, configure, tasto type, pc. avremo la seguente situazione:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-1ABkbftTC9g/Ut-n63quyFI/AAAAAAAAARY/2SItrcpwcqY/s1600/core_net1.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-1ABkbftTC9g/Ut-n63quyFI/AAAAAAAAARY/2SItrcpwcqY/s1600/core_net1.png" height="179" width="320" /></a></div><br /><br />dal menu widgets possiamo verificare le rotte<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-swQEN82r9B8/Ut-9eamg3vI/AAAAAAAAARo/ApdEgyQipAg/s1600/core_route.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-swQEN82r9B8/Ut-9eamg3vI/AAAAAAAAARo/ApdEgyQipAg/s1600/core_route.png" height="179" width="320" /></a></div><br />oppure dalla shell<br /><br />Hello, this is Quagga (version 0.99.22.4).<br />Copyright 1996-2005 Kunihiro Ishiguro, et al.<br /><br />n2# sh ip route<br /><br />O&gt;* 10.0.0.0/24 [110/20] via 10.0.1.1, eth0, 00:06:35<br />O&nbsp;&nbsp; 10.0.1.0/24 [110/10] is directly connected, eth0, 00:07:30<br />C&gt;* 10.0.1.0/24 is directly connected, eth0<br />O&nbsp;&nbsp; 10.0.2.0/24 [110/10] is directly connected, eth1, 00:07:30<br />C&gt;* 10.0.2.0/24 is directly connected, eth1<br />O&gt;* 10.0.3.0/24 [110/20] via 10.0.2.2, eth1, 00:06:40<br />C&gt;* 127.0.0.0/8 is directly connected, lo<br /><br />infine connettiamoci con ssh<br /># ssh 10.0.0.20<br /><br />&nbsp; root@10.0.0.20's password: <br /><br />Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent<br />permitted by applicable law.<br /><br /><br />se avete qualche errore di accesso alla sessione ssh ricreate il file<br /><br />:&gt;.ssh/known_hosts<br /><br />nella home del utente, perché i parametri della home_root delle shell_window corrispono a quella del utente che segue core 
+
+            </div>
+        </div>
+
+
+    </div>
+
+  
+
+
+
+</body>
+
+</html>
