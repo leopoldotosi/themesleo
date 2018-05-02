@@ -27,7 +27,7 @@ markdown: kramdown
 #permalink: /themesleo
 #theme: jekyll-theme-dinky
 plugins:
-  - jekyll-admin
+# - jekyll-admin
 # - jekyll-feed
 # - jekyll-seo-tag
   - jekyll-sitemap
