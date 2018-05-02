@@ -3,7 +3,7 @@ source "https://rubygems.org"
 #gemspec
 #
 group :jekyll_plugins do
-	gem 'jekyll-admin'
+#gem 'jekyll-admin'
 	gem 'jekyll-gist'
 ##	gem 'github-pages'
 	gem 'jekyll-lunr-js-search'
