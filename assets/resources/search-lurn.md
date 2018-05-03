@@ -6,7 +6,7 @@ root: ../
 <p>
 <div class="tiles">
 	<ul class="actions"> <li>
-<section id="search-results" style="display: none;"> 
+<section id="search-results" style="display: none;"> </section> </li> </ul>
 
 	{% raw %}
 	<script id="search-results-template" type="text/mustache">
@@ -37,7 +37,6 @@ root: ../
 			});
 		});
 	</script>
-</section>
-</li> </ul>
+
 </div>
 </p>
