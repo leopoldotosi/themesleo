@@ -5,6 +5,7 @@ root: ../
 <p> <div class="tiles"> page searched </div></p>
 <p>
 <div class="tiles">
+	<ul class="actions"> <li>
 <section id="search-results" style="display: none;"> 
 
 	{% raw %}
@@ -37,5 +38,6 @@ root: ../
 		});
 	</script>
 </section>
+</li> </ul>
 </div>
 </p>
