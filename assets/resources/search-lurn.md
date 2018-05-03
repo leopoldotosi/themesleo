@@ -2,7 +2,7 @@
 layout: layout1
 root: ../
 ---
-<p> <div class="tiles"> page searched </div></p>
+<p> <div class="tiles"> page leo searched </div></p>
 <p>
 <div class="tiles">
 	<ul class="actions"> <li>
