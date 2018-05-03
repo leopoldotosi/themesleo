@@ -2,7 +2,9 @@
 layout: layout1
 root: ../
 ---
-<p> page searched </p>
+<p> <div class="tiles"> page searched </div></p>
+<p>
+<div class="tiles">
 <section id="search-results" style="display: none;"> 
 
 	{% raw %}
@@ -35,4 +37,5 @@ root: ../
 		});
 	</script>
 </section>
-
+</div>
+</p>
