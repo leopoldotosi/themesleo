@@ -2,7 +2,7 @@
 layout: layout1
 root: ../
 ---
-
+<p> page searched </p>
 <section id="search-results" style="display: none;"> 
 
 	{% raw %}
