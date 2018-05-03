@@ -2,8 +2,11 @@
 layout: layout1
 root: ../
 ---
-<p> page searched </p>
-<section id="search-results" style="display: none;"> 
+<p> <div class="tiles"> page leo searched </div></p>
+<p>
+<div class="tiles">
+	<ul class="actions"> <li>
+<section id="search-results" style="display: none;"> </section> </li> </ul>
 
 	{% raw %}
 	<script id="search-results-template" type="text/mustache">
@@ -34,5 +37,6 @@ root: ../
 			});
 		});
 	</script>
-</section>
 
+</div>
+</p>
