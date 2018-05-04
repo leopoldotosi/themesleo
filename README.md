@@ -1,4 +1,4 @@
-## themesleo
+### themesleo
 _test **blog** on githug_
 
 gli elementi fondamentali per realizzare questo blog sono:
@@ -9,6 +9,7 @@ sintassi testo
 enginiering con js, ruby, css
 [jekyll-plugins](https://jekyllrb.com/docs/plugins/#installing-a-plugin)
 
+sintassi css, html, scripting
 [w3c](https://www.w3.org/) 
 
 gestione e creazione post

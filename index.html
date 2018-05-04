@@ -9,7 +9,6 @@ root: ../
 <p>
 <div class="tiles">
 
-
 <ul id="search-results"></ul>
 
 <script>
@@ -34,23 +33,23 @@ root: ../
 </div>
 </p>
 
-
-
-<p>
-<div class="tiles">
-	{% for post in site.posts %}
-    <div class="relative w3-round-xlarge">
-	<article>
-		<b>{{ post.title }}</b>
-		<!-- b> {{ post.excerpt | truncatewords:15 }}  </b -->
-		<ul class="actions"> <li><a href="{{site.baseurl}}{{post.url}}" class="button">More</a></li> </ul>
-	</article>
-    </div>
-	{% endfor %}
-</div>
-</p>
-
-
-
-<p> </p>
 </section>
+
+
+
+<div style="overflow: hidden;">
+    <div style="float: left;">
+    
+<section>
+ {% include poldonet.html %}
+</section>
+    
+    </div>
+        <div style="float: left;">
+<section>
+ {% include culturadigitale.html %}
+</section>
+        </div>
+</div>
+
+
