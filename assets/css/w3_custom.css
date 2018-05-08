@@ -1,3 +1,7 @@
+	.line{
+	    white-space: nowrap;
+	}
+
 div.rcorners3 {
     border-radius: 5px;
     background-image: url("{{site.baseurl}}/assets/resources/eu-eug2.gif");
@@ -36,3 +40,11 @@ div.rcorners3 {
 		margin-top: 1%;
 		margin-bottom: 1%;
 	}
+        .absolute {
+            position: absolute;
+            top: 9%;
+            right: 1%;
+            width: 200px;
+            height: 321px;
+            border: 1px solid #73AD21;
+        }

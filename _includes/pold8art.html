@@ -1,0 +1,22 @@
+<!-- poldonet -->
+
+<p>
+<div class="tiles">
+
+	{% for post in site.posts %}
+    {% if post.path contains 'pold8art' %}
+
+    <div class="relative_left w3-round-xlarge w3-yellow">
+	<article>
+		<b>{{ post.title }}</b>
+		<b>{{ post.category }}</b>
+	
+		<ul class="actions"> <li><a href="{{site.baseurl}}{{post.url}}" class="button">More</a></li> </ul>
+	</article>
+    </div>
+
+    {% endif %}
+	{% endfor %}
+</div>
+</p>
+
