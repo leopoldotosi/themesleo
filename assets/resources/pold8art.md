@@ -1,4 +1,8 @@
-<!-- poldonet -->
+---
+layout: layout1
+root: ../
+---
+<!-- pold8art -->
 
 <p>
 <div class="tiles">
