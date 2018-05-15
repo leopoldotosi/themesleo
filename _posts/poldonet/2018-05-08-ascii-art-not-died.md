@@ -26,6 +26,6 @@ convertitori:
 
 [convert to ascii art](https://www.text-image.com/convert/ascii.html)
 <pre>
-<div id="asinelli" style="font-size: 5px;"> </div>
+<div id="asinelli" style="font-size: 3px;"> </div>
 </pre>
 <script>$("#asinelli").load("{{site.baseurl}}/assets/resources/asinelli.txt"); </script>
