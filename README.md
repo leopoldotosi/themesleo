@@ -19,6 +19,5 @@ ricerca sul sito
 [lunr.js](https://github.com/slashdotdash/jekyll-lunr-js-search)
 
 
-il fine del blog è divulgativo e fa riferimento a openlabs e limulo
-
+il fine del blog è divulgativo.
 
