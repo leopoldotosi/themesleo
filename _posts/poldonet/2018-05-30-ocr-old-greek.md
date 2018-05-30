@@ -15,10 +15,10 @@ Può aiutare **tesseract-ocr** nel mio caso il testo contiene parole in greco an
 
 il cmd aptitude mostra per il greco antico
 
-i  tesseract-ocr - strumento per OCR a riga di comando Tesseract
-i  tesseract-ocr-equ - file di lingua di tesseract-ocr per le equazioni
-i  **tesseract-ocr-grc **- file di lingua di tesseract-ocr per il greco antico
-.....
+i  tesseract-ocr:  strumento per OCR a riga di comando Tesseract<br />
+i  tesseract-ocr-equ : file di lingua di tesseract-ocr per le equazioni<br />
+i  **tesseract-ocr-grc** : file di lingua di tesseract-ocr per il greco antico
+
 
 Il tool grafico per gestire la conversione è **gimagereader**  che è tra i migliori.
 
