@@ -1,8 +1,12 @@
-<!-- Demo version: 2017.08.06 -->
+---
+layout: layout1
+root: ../
+---
+<!-- Demo version: 2017.08.06
 
 <!DOCTYPE html>
 <html lang="en">
-
+ -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -75,14 +79,14 @@
             <div id="videos-container"></div>
         </section>
 
-        <script src="/assets/css/MultiRTC/jekylljs/RTCMultiConnection.min.js"></script>
-        <script src="/assets/css/MultiRTC/jekylljs/PubNubConnection.js"></script>
+        <script src="{{site.baseurl}}/assets/css/MultiRTC/jekylljs/RTCMultiConnection.min.js"></script>
+        <script src="{{site.baseurl}}/assets/css/MultiRTC/jekylljs/PubNubConnection.js"></script>
 
         <!-- script src="https://cdn.webrtc-experiment.com:443/FileBufferReader.js"></script>
         <script src="https://cdn.webrtc-experiment.com/view/websocket.js"></script -->
 
-        <script src="/assets/css/MultiRTC/jekylljs/FileBufferReader_leo.js"></script>
-        <script src="/assets/css/MultiRTC/jekylljs/websocket_leo.js"></script>
+        <script src="{{site.baseurl}}/assets/css/MultiRTC/jekylljs/FileBufferReader_leo.js"></script>
+        <script src="{{site.baseurl}}/assets/css/MultiRTC/jekylljs/websocket_leo.js"></script>
         <script>
             // ......................................................
             // .......................UI Code........................
@@ -272,7 +276,7 @@
             window.useThisGithubPath = 'muaz-khan/RTCMultiConnection';
         </script>
         <!-- script src="https://cdn.webrtc-experiment.com/commits.js" async></script -->
-        <script src="/assets/css/MultiRTC/jekylljs/commits_leo.js" async></script>
+        <script src="{{site.baseurl}}/assets/css/MultiRTC/jekylljs/commits_leo.js" async></script>
 
     </article>
 
@@ -286,4 +290,4 @@
 
 </body>
 
-</html>
+<!-- /htmlc -->
