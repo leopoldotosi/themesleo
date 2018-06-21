@@ -1,0 +1,78 @@
+---
+layout: default
+root: ../
+---
+
+
+<article id="#wrtc1">
+<head>
+  <script type='text/javascript' src='scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 50px;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    video {
+	float: left;
+      max-width: calc(50% - 100px);
+      margin: 0 50px;
+      box-sizing: border-box;
+      border-radius: 2px;
+      padding: 0;
+      box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+    }
+    .copy {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    .copydiv {
+	float: left;
+    }
+  </style>
+</head>
+<div>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <script src="script.js"></script>
+</div>
+  
+	<div class="copydiv"> 
+	<p><br> <br> info<br> </p>
+	<button onclick="myFunction('it')">it</button> 
+	<button onclick="myFunction('en')">en</button> 
+	<button onclick="myFunction('es')">es</button> 
+	<p> <div id="demo"> </div><br> <br> </p>
+	
+	  <script>
+	function myFunction(val)
+	{
+	var x;
+	var d= val;
+	switch (d)
+		  {
+		case 'en':
+		x="Send your URL to a friend to start a video call";
+		break;
+		case 'it':
+		x=":-) Per attivare la video conferenza invia l'URL a un amico (-:";
+		break;
+		case 'es': 
+		x=":-)Para abrir la Video Conferenzia envia URL a un amigo(-:";
+		break;
+		  }
+		document.getElementById("demo").innerHTML=x;
+	}
+	  </script>
+	</div>
+</article>
+
