@@ -1,0 +1,83 @@
+---
+title: Fantasy_Grazia
+layout: post
+---
+
+A volte c'è la Grazia <br>
+A volte c'è la Fantasia <br>
+Poi c'è la Fantasia di Grazia
+
+<form>
+   <img src="{{site.baseurl}}/assets/imges/pold8art//grazia/g1.jpg" id="g01" style="display: auto;  width: 5%;">  
+	 <p id='l3'> </p>
+	    <img src="{{site.baseurl}}/assets/imges/pold8art//grazia/g2.jpg" id="g02" style="display: auto;  width: 5%;"> 
+			 <p id='l4'> </p>
+					    <img src="{{site.baseurl}}/assets/imges/pold8art//grazia/g4.jpg" id="g04" style="display: auto;  width: 5%;"> 
+							 <p id='l5'> </p>
+								    <img src="{{site.baseurl}}/assets/imges/pold8art//grazia/g5.jpg" id="g05" style="display: auto;  width: 5%;"> 
+         <p>Click Start: Partenza!!</p>
+         <input type = "button" value = "Start" onclick = "moveRight();" />
+				   <input type = "button" value = "Stop" onclick = "stop();" />
+      </form>
+<div id='l2'  style="float: right;  width: 200px;"> </div>
+		
+  <script type = "text/javascript">
+         
+            var iObj1 = null;	var iObj2 = null; var iObj3 = null;	var iObj4 = null;
+            var animate ; var ww = 0;
+						var lj1 = 0; var out0 = 1; var lj2 = 0; var lj3 = 0; var lj4 = 0;
+            
+            function init() {
+               iObj1= document.getElementById('g01');
+               iObj1.style.position= 'relative'; 
+               iObj1.style.left = '0px'; 
+							 iObj2 = document.getElementById('g02');
+							 iObj2.style.position= 'relative'; 
+               iObj2.style.left = '0px';
+							 iObj3 = document.getElementById('g04');
+							 iObj3.style.position= 'relative'; 
+               iObj3.style.left = '0px';
+ 							 iObj4 = document.getElementById('g05');
+							 iObj4.style.position= 'relative'; 
+               iObj4.style.left = '0px';
+            }
+            
+            function moveRight() {
+						  lj1 = Math.floor(Math.random() * 15) + 5;
+							lj2 = Math.floor(Math.random() * 15) + 5;
+						  lj3 = Math.floor(Math.random() * 15) + 5;
+							lj4 = Math.floor(Math.random() * 15) + 5;
+              iObj1.style.left = parseInt(iObj1.style.left) + lj1 + 'px';
+							iObj2.style.left = parseInt(iObj2.style.left) + lj2 + 'px';
+		          iObj3.style.left = parseInt(iObj3.style.left) + lj3 + 'px';
+							iObj4.style.left = parseInt(iObj2.style.left) + lj4 + 'px';
+                scheck() ;
+							 animate = setTimeout(moveRight,100);    // call moveRight in 20msec
+							 if ( out0 == 0 ) {  var r =  window.confirm("WINNER  " + ww  + "\n" + "premi F5 per iniziare");
+																										if (r == true) {  clearTimeout(animate);	} else {  clearTimeout(animate);		} 
+																								 }
+            }    
+                    
+            function stop( idel ) {
+               clearTimeout(animate);
+							 //document.getElementById('l2').innerHTML = idel;
+							 lj1=0; lj2=0; out0=0;  lj3 = 0;  lj4 = 0;
+							 document.getElementById( idel ).style.position= 'absolute';
+							 document.getElementById( idel ).style.width = "300";
+							 document.getElementById( idel ).style.top = "40";
+							 document.getElementById( idel ).style.left = '450px'; 
+							
+            }
+                function scheck() {
+								    var l1 = parseInt(iObj1.style.left);
+										var l2 = parseInt(iObj2.style.left);
+										var l3 = parseInt(iObj3.style.left);
+										var l4 = parseInt(iObj4.style.left);
+							      document.getElementById('l2').innerHTML = l1 + " km percorsi ";
+							 			            if ( l1>=  700  ) { stop('g01')	;   ww = "01";} 
+											else if ( l2 >=  700  ) { stop('g02');  ww = "02";}
+											else if ( l3 >=  700  ) { stop('g04'); ww = "03";}
+											else if ( l4 >=  700  ) { stop('g05'); ww = "04";}
+								}
+            window.onload = init;         
+    </script>
